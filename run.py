@@ -1,49 +1,118 @@
-import random
-import pandas as pd
+
 from datetime import datetime
+import urllib.request
+import pandas as pd
+import zipfile
+import requests
 import plotly
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 
+url = 'https://files.digital.nhs.uk/assets/ods/current/epraccur.zip'
+filehandle, _ = urllib.request.urlretrieve(url)
+zip_file_object = zipfile.ZipFile(filehandle, 'r')
+first_file = zip_file_object.namelist()[0]
+file = zip_file_object.open(first_file)
+content = file.read()
+csv_file = open('gp_data.csv', 'wb')
+csv_file.write(content )
+csv_file.close()
+header_list = ["Organisation Code", "Name", "National Grouping", "High Level Health Geography", "Address line 1", "Address line 2", "Address line 3", 
+"Address line 4", "Address line 5", "Postcode", "Open Date", "Close Date", "Status Code", "Organisation Sub-Type Code", "Commissioner",
+"Join Provider/Purchaser Date", "Left Provider/Purchaser Date", "Contact Telephone Number", "Null 1", "Null 2", "Null 3", "Amended Record Indicator",
+"Null 4", "Provider/Purchaser", "Null 5", "Prescribing Setting", "Null 6"
+]
+gp_practice_df = pd.read_csv('gp_data.csv', names=header_list)
+gp_practice_df.fillna('', inplace=True)
+gp_practice_df['Partial Address'] = gp_practice_df[['Address line 1', 
+'Address line 2',
+'Address line 3',
+'Address line 4',]].agg(', '.join, axis=1)
+gp_practice_df['Full Address'] = gp_practice_df[['Partial Address', 
+'Address line 5',]].agg(' '.join, axis=1)
+gp_practice_df['Full Address'] = gp_practice_df['Full Address'].str.title()
+gp_practice_df['Name'] = gp_practice_df['Name'].str.title()
+gp_practice_df_1 = gp_practice_df.drop(columns = {
+"High Level Health Geography", "Address line 1", "Address line 2", "Address line 3", "Address line 4", "Address line 5", "Open Date",
+"Close Date", "Organisation Sub-Type Code", "Commissioner", "Join Provider/Purchaser Date", "Left Provider/Purchaser Date", "Contact Telephone Number",
+"Null 1", "Null 2", "Null 3", "Amended Record Indicator", "Null 4", "Partial Address", "Provider/Purchaser", "Null 5", "Null 6"})
+gp_practice_df_2 =  gp_practice_df_1[gp_practice_df_1["Status Code"] == "A"]
+gp_practice_df_3 =  gp_practice_df_2[gp_practice_df_2["Prescribing Setting"] == 4]
+gp_practice_df_eng = gp_practice_df_3[gp_practice_df_3["National Grouping"].str.contains("YAC|YAD|YAE|YAF|W00")==False]
+gp_practice_df_eng_1 = gp_practice_df_eng.reset_index(drop = True)
+gp_practice_df_eng_2 = gp_practice_df_eng_1.copy()
+gp_practice_df_eng_3 = gp_practice_df_eng_2.drop( columns = {"Status Code", "Prescribing Setting"})
+gp_practice_df_ldn = gp_practice_df_eng_3[gp_practice_df_eng_3["National Grouping"].str.contains("Y56")==True]
+gp_practice_df_ldn['Name'] = gp_practice_df_ldn['Name'].str.replace('Gp', 'GP')
+gp_practice_df_ldn['Full Address'] = gp_practice_df_ldn['Full Address'].str.replace(' ,', ' ').str.replace('  ', ' ').str.replace('Gp', 'GP').map(lambda x: x.rstrip(', '))
+gp_practice_df_ldn_1 = gp_practice_df_ldn.reset_index(drop = True)
 
-# Generate Data
+csv_url = "https://files.digital.nhs.uk/40/2232E5/gp-reg-pat-prac-all.csv"
+req = requests.get(csv_url)
+url_content = req.content
+csv_file = open('gp_pop.csv', 'wb')
+csv_file.write(url_content)
+csv_file.close()
+gp_pop_df = pd.read_csv('gp_pop.csv')
+gp_pop_df.rename(columns={'CODE': 'Organisation Code', 'NUMBER_OF_PATIENTS': 'Number of patients registered at GP practices in England'}, inplace=True)
+gp_pop_df_1 = gp_pop_df.drop(columns = {'PUBLICATION', 'EXTRACT_DATE', 'TYPE', 'CCG_CODE', 'ONS_CCG_CODE', 'SEX', 'AGE', 'POSTCODE'})
+gp_pop_ldn = gp_practice_df_ldn_1.join(gp_pop_df_1, rsuffix='Organisation Code')
+gp_pop_ldn.rename(columns={'Number of patients registered at GP practices in England': 'Number of patients registered at GP practices in London'}, inplace=True)
+gp_pop_ldn_1 = gp_pop_ldn.drop(columns={'Organisation CodeOrganisation Code', 'National Grouping'})
 
-x = pd.date_range(datetime.today(), periods=100).tolist()
-y = random.sample(range(1, 300), 100)
-
-# Plot figure
-fig = go.Figure([go.Bar(x=x, y=y)])
-
-# Asthetics of the plot
-fig.update_layout(
+x0 = gp_pop_ldn_1['Number of patients registered at GP practices in London']
+x1 = gp_pop_df_1['Number of patients registered at GP practices in England']
+count_england = gp_pop_df_1['Number of patients registered at GP practices in England'].count()
+count_london = gp_pop_ldn_1['Number of patients registered at GP practices in London'].count()
+fig_1 = go.Figure()
+fig_1.add_trace(go.Box(x=x0, 
+boxmean=True,  
+boxpoints= 'all', 
+jitter=0.3, 
+name="London", 
+marker_color ="#0072CE", 
+whiskerwidth=0.5, 
+marker_size=3,
+line_width=2))
+fig_1.add_trace(go.Box(x=x1, 
+boxmean=True, 
+boxpoints= 'all', 
+jitter=0.3, 
+name="England", 
+marker_color = "#003087", 
+whiskerwidth=0.5, 
+marker_size=3,
+line_width=2))
+fig_1.update_layout(
     {"plot_bgcolor": "rgba(0, 0, 0, 0)", "paper_bgcolor": "rgba(0, 0, 0, 0)"},
+    font = dict(family = "Arial", size = 16),
     autosize=True,
-    margin=dict(l=50, r=50, b=50, t=50, pad=4, autoexpand=True),
-    # height=1000,
-    # hovermode="x",
-)
-
-# Add title and dynamic range selector to x axis
-fig.update_xaxes(
-    title_text="Date",
-    rangeselector=dict(
-        buttons=list(
-            [
-                dict(count=6, label="6m", step="month", stepmode="backward"),
-                dict(count=1, label="1y", step="year", stepmode="backward"),
-                dict(step="all"),
-            ]
-        )
-    ),
-)
-
-# Add title to y axis
-fig.update_yaxes(title_text="Count")
+    margin=dict(l=50, r=50, b=100, t=50, pad=4, autoexpand=True), hoverlabel=dict(
+        font_size=12,
+        font_family="Arial"
+    ), xaxis=dict(title='Number of patients registered at individual GP practices', zeroline=False))
+fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
+                                        x=0.23,
+                                        y=-0.29,
+                                        showarrow=False,
+                                        text="Number of GP practices in England: %s" %count_england,
+                                        textangle=0,
+                                        xanchor='right',
+                                        xref="paper",
+                                        yref="paper"))
+fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
+                                        x=0.225,
+                                        y=-0.35,
+                                        showarrow=False,
+                                        text="Number of GP practices in London: %s" %count_london,
+                                        textangle=0,
+                                        xanchor='right',
+                                        xref="paper",
+                                        yref="paper"))      
 
 # Write out to file (.html)
 config = {"displayModeBar": False, "displaylogo": False}
 plotly_obj = plotly.offline.plot(
-    fig, include_plotlyjs=False, output_type="div", config=config
+    fig_1, include_plotlyjs=False, output_type="div", config=config
 )
 with open("_includes/plotly_obj.html", "w") as file:
     file.write(plotly_obj)
