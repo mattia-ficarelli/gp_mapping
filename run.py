@@ -86,13 +86,13 @@ fig_1.update_layout(
     {"plot_bgcolor": "rgba(0, 0, 0, 0)", "paper_bgcolor": "rgba(0, 0, 0, 0)"},
     font = dict(family = "Arial", size = 16),
     autosize=True,
-    margin=dict(l=75, r=50, b=120, t=50, pad=4, autoexpand=True), hoverlabel=dict(
+    margin=dict(l=75, r=50, b=130, t=50, pad=4, autoexpand=True), hoverlabel=dict(
         font_size=12,
         font_family="Arial"
     ), xaxis=dict(title='Number of patients registered at individual GP practices', zeroline=False))
 fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
-                                        x=0.23,
-                                        y=-0.29,
+                                        x=0.33,
+                                        y=-0.34,
                                         showarrow=False,
                                         text="Number of GP practices in England: %s" %count_england,
                                         textangle=0,
@@ -100,8 +100,8 @@ fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         xref="paper",
                                         yref="paper"))
 fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
-                                        x=0.225,
-                                        y=-0.35,
+                                        x=0.325,
+                                        y=-0.4,
                                         showarrow=False,
                                         text="Number of GP practices in London: %s" %count_london,
                                         textangle=0,
