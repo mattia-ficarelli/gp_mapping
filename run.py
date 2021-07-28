@@ -86,7 +86,7 @@ fig_1.update_layout(
     {"plot_bgcolor": "rgba(0, 0, 0, 0)", "paper_bgcolor": "rgba(0, 0, 0, 0)"},
     font = dict(family = "Arial", size = 16),
     autosize=True,
-    margin=dict(l=50, r=50, b=100, t=50, pad=4, autoexpand=True), hoverlabel=dict(
+    margin=dict(l=75, r=50, b=120, t=50, pad=4, autoexpand=True), hoverlabel=dict(
         font_size=12,
         font_family="Arial"
     ), xaxis=dict(title='Number of patients registered at individual GP practices', zeroline=False))
