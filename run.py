@@ -100,7 +100,7 @@ fig_1.update_layout(
     ), xaxis=dict(title='Number of patients registered at individual GP practices', zeroline=False))
 fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         x=0.33,
-                                        y=-0.34,
+                                        y=-0.40,
                                         showarrow=False,
                                         text="Number of GP practices in England: %s" %count_england,
                                         textangle=0,
@@ -109,7 +109,7 @@ fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         yref="paper"))
 fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         x=0.323,
-                                        y=-0.4,
+                                        y=-0.46,
                                         showarrow=False,
                                         text="Number of GP practices in London: %s" %count_london,
                                         textangle=0,
