@@ -13,7 +13,7 @@ zip_file_object = zipfile.ZipFile(filehandle, 'r')
 first_file = zip_file_object.namelist()[0]
 file = zip_file_object.open(first_file)
 content = file.read()
-csv_file = open('gp_data.csv', 'wb')
+csv_file = open('list_of_gp_practices.csv', 'wb')
 csv_file.write(content )
 csv_file.close()
 header_list = ["Organisation Code", "Name", "National Grouping", "High Level Health Geography", "Address line 1", "Address line 2", "Address line 3", 
@@ -49,10 +49,10 @@ gp_practice_df_ldn_1 = gp_practice_df_ldn.reset_index(drop = True)
 csv_url = "https://files.digital.nhs.uk/40/2232E5/gp-reg-pat-prac-all.csv"
 req = requests.get(csv_url)
 url_content = req.content
-csv_file = open('gp_pop.csv', 'wb')
+csv_file = open('gp_pop_data.csv', 'wb')
 csv_file.write(url_content)
 csv_file.close()
-gp_pop_df = pd.read_csv('gp_pop.csv')
+gp_pop_df = pd.read_csv('gp_pop_data.csv')
 gp_pop_df.rename(columns={'CODE': 'Organisation Code', 'NUMBER_OF_PATIENTS': 'Number of patients registered at GP practices in England'}, inplace=True)
 gp_pop_df_1 = gp_pop_df.drop(columns = {'PUBLICATION', 'EXTRACT_DATE', 'TYPE', 'CCG_CODE', 'ONS_CCG_CODE', 'SEX', 'AGE', 'POSTCODE'})
 gp_pop_ldn = gp_practice_df_ldn_1.join(gp_pop_df_1, rsuffix='Organisation Code')
@@ -100,7 +100,7 @@ fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         xref="paper",
                                         yref="paper"))
 fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
-                                        x=0.325,
+                                        x=0.324,
                                         y=-0.4,
                                         showarrow=False,
                                         text="Number of GP practices in London: %s" %count_london,
