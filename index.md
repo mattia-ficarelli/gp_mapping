@@ -21,6 +21,10 @@
 
 {% include plotly_obj.html %}
 
+### Number of patients registered at indvidual GP Practices in London
+
+<iframe width= "900" height="700"  src="assets/folium/folium_obj.html" style="border:none;"></iframe>
+
 ## About this page
 
 This page is built using end-to-end open source analytical tools including: [The NHS Digital Service Manual](https://service-manual.nhs.uk/), [python](https://nhs-pycom.net/), [plotly](https://plotly.com/python/), [folium](http://python-visualization.github.io/folium/), [geopy](https://geopy.readthedocs.io/en/stable/), [github.io](https://pages.github.com/), and [github actions](https://github.com/features/actions).
