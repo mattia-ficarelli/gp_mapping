@@ -7,33 +7,32 @@ import requests
 import plotly
 import plotly.graph_objects as go
 
+#Plot 1 and 2 start
+## Get EPRACCUR data from NHSD 
 url = 'https://files.digital.nhs.uk/assets/ods/current/epraccur.zip'
 filehandle, _ = urllib.request.urlretrieve(url)
 zip_file_object = zipfile.ZipFile(filehandle, 'r')
 first_file = zip_file_object.namelist()[0]
 file = zip_file_object.open(first_file)
 content = file.read()
-csv_file = open('list_of_gp_practices.csv', 'wb')
-csv_file.write(content )
+csv_file = open('assets/data/epraccur_data.csv', 'wb')
+csv_file.write(content)
 csv_file.close()
 header_list = ["Organisation Code", "Name", "National Grouping", "High Level Health Geography", "Address line 1", "Address line 2", "Address line 3", 
-"Address line 4", "Address line 5", "Postcode", "Open Date", "Close Date", "Status Code", "Organisation Sub-Type Code", "Commissioner",
-"Join Provider/Purchaser Date", "Left Provider/Purchaser Date", "Contact Telephone Number", "Null 1", "Null 2", "Null 3", "Amended Record Indicator",
-"Null 4", "Provider/Purchaser", "Null 5", "Prescribing Setting", "Null 6"
-]
-gp_practice_df = pd.read_csv('gp_data.csv', names=header_list)
+"Address line 4", "Address line 5","Postcode","Open Date","Close Date","Status Code","Organisation Sub-Type Code","Commissioner","Join Provider/Purchaser Date",
+"Left Provider/Purchaser Date","Contact Telephone Number", "Null 1", "Null 2", "Null 3", "Amended Record Indicator", "Null 4", "Provider/Purchaser",
+"Null 5", "Prescribing Setting", "Null 6"]
+## Get EPRACCUR data from NHSD end 
+
+##EPRACCUR data processing 
+gp_practice_df = pd.read_csv('assets/data/epraccur_data.csv', names=header_list)
 gp_practice_df.fillna('', inplace=True)
-gp_practice_df['Partial Address'] = gp_practice_df[['Address line 1', 
-'Address line 2',
-'Address line 3',
-'Address line 4',]].agg(', '.join, axis=1)
-gp_practice_df['Full Address'] = gp_practice_df[['Partial Address', 
-'Address line 5',]].agg(' '.join, axis=1)
+gp_practice_df['Partial Address'] = gp_practice_df[['Address line 1', 'Address line 2', 'Address line 3', 'Address line 4',]].agg(', '.join, axis=1)
+gp_practice_df['Full Address'] = gp_practice_df[['Partial Address', 'Address line 5',]].agg(' '.join, axis=1)
 gp_practice_df['Full Address'] = gp_practice_df['Full Address'].str.title()
 gp_practice_df['Name'] = gp_practice_df['Name'].str.title()
-gp_practice_df_1 = gp_practice_df.drop(columns = {
-"High Level Health Geography", "Address line 1", "Address line 2", "Address line 3", "Address line 4", "Address line 5", "Open Date",
-"Close Date", "Organisation Sub-Type Code", "Commissioner", "Join Provider/Purchaser Date", "Left Provider/Purchaser Date", "Contact Telephone Number",
+gp_practice_df_1 = gp_practice_df.drop(columns = {"High Level Health Geography", "Address line 1", "Address line 2", "Address line 3", "Address line 4", 
+"Address line 5", "Open Date", "Close Date", "Organisation Sub-Type Code", "Commissioner", "Join Provider/Purchaser Date", "Left Provider/Purchaser Date",
 "Null 1", "Null 2", "Null 3", "Amended Record Indicator", "Null 4", "Partial Address", "Provider/Purchaser", "Null 5", "Null 6"})
 gp_practice_df_2 =  gp_practice_df_1[gp_practice_df_1["Status Code"] == "A"]
 gp_practice_df_3 =  gp_practice_df_2[gp_practice_df_2["Prescribing Setting"] == 4]
@@ -44,21 +43,30 @@ gp_practice_df_eng_3 = gp_practice_df_eng_2.drop( columns = {"Status Code", "Pre
 gp_practice_df_ldn = gp_practice_df_eng_3[gp_practice_df_eng_3["National Grouping"].str.contains("Y56")==True]
 gp_practice_df_ldn['Name'] = gp_practice_df_ldn['Name'].str.replace('Gp', 'GP')
 gp_practice_df_ldn['Full Address'] = gp_practice_df_ldn['Full Address'].str.replace(' ,', ' ').str.replace('  ', ' ').str.replace('Gp', 'GP').map(lambda x: x.rstrip(', '))
-gp_practice_df_ldn_1 = gp_practice_df_ldn.reset_index(drop = True)
+gp_practice_df_ldn_2  = gp_practice_df_ldn[gp_practice_df_ldn["Name"].str.contains("Babylon")==False]
+gp_practice_df_ldn_3 = gp_practice_df_ldn_2.reset_index(drop = True)
+##EPRACCUR data processing end 
 
+##Get Patients registered at GP practices data from NHSD
 csv_url = "https://files.digital.nhs.uk/40/2232E5/gp-reg-pat-prac-all.csv"
 req = requests.get(csv_url)
 url_content = req.content
-csv_file = open('gp_pop_data.csv', 'wb')
+csv_file = open('assets/data/gp_pop_data.csv', 'wb')
 csv_file.write(url_content)
 csv_file.close()
-gp_pop_df = pd.read_csv('gp_pop_data.csv')
+gp_pop_df = pd.read_csv('assets/data/gp_pop_data.csv')
 gp_pop_df.rename(columns={'CODE': 'Organisation Code', 'NUMBER_OF_PATIENTS': 'Number of patients registered at GP practices in England'}, inplace=True)
 gp_pop_df_1 = gp_pop_df.drop(columns = {'PUBLICATION', 'EXTRACT_DATE', 'TYPE', 'CCG_CODE', 'ONS_CCG_CODE', 'SEX', 'AGE', 'POSTCODE'})
-gp_pop_ldn = gp_practice_df_ldn_1.join(gp_pop_df_1, rsuffix='Organisation Code')
-gp_pop_ldn.rename(columns={'Number of patients registered at GP practices in England': 'Number of patients registered at GP practices in London'}, inplace=True)
-gp_pop_ldn_1 = gp_pop_ldn.drop(columns={'Organisation CodeOrganisation Code', 'National Grouping'})
+##Get Patients registered at GP practices data from NHSD end 
 
+##Merge EPRACCUR and patients registered at GP practices data 
+gp_pop_ldn = gp_practice_df_ldn_3.join(gp_pop_df_1, rsuffix='Organisation Code')
+gp_pop_ldn.rename(columns={'Number of patients registered at GP practices in England': 'Number of patients registered at GP practices in London'}, inplace=True)
+gp_pop_ldn["Address"] = gp_pop_ldn[["Full Address", "Postcode"]].agg(', '.join, axis=1)
+gp_pop_ldn_1 = gp_pop_ldn.drop(columns={'Organisation CodeOrganisation Code', 'National Grouping', 'Postcode', 'Full Address'})
+##Merge EPRACCUR and patients registered at GP practices data end
+
+##Visualization Plot 1
 x0 = gp_pop_ldn_1['Number of patients registered at GP practices in London']
 x1 = gp_pop_df_1['Number of patients registered at GP practices in England']
 count_england = gp_pop_df_1['Number of patients registered at GP practices in England'].count()
@@ -107,15 +115,17 @@ fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         textangle=0,
                                         xanchor='right',
                                         xref="paper",
-                                        yref="paper"))      
+                                        yref="paper"))   
+##Visualization Plot 1 end 
                                       
-# Write out to file (.html)
+## Write out to file (.html) Plot 1
 config = {"displayModeBar": False, "displaylogo": False}
 plotly_obj = plotly.offline.plot(
     fig_1, include_plotlyjs=False, output_type="div", config=config
 )
 with open("_includes/plotly_obj.html", "w") as file:
     file.write(plotly_obj)
+## Write out to file (.html) Plot 1 end 
 
 # Grab timestamp
 data_updated = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
