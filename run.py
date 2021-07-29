@@ -100,7 +100,7 @@ fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         xref="paper",
                                         yref="paper"))
 fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
-                                        x=0.324,
+                                        x=0.323,
                                         y=-0.4,
                                         showarrow=False,
                                         text="Number of GP practices in London: %s" %count_london,
@@ -108,7 +108,7 @@ fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         xanchor='right',
                                         xref="paper",
                                         yref="paper"))      
-
+                                      
 # Write out to file (.html)
 config = {"displayModeBar": False, "displaylogo": False}
 plotly_obj = plotly.offline.plot(
