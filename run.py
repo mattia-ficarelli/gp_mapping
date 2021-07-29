@@ -112,7 +112,7 @@ fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         xref="paper",
                                         yref="paper"))
 fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
-                                        x=0.323,
+                                        x=0.322,
                                         y=-0.46,
                                         showarrow=False,
                                         text="Number of GP practices in London: %s" %count_london,
@@ -137,7 +137,7 @@ gp_prac_pop_df = pd.read_csv(file_name)
 gp_prac_pop_df_1 = gp_prac_pop_df[gp_prac_pop_df['loc'].str.contains("US")==False]
 gp_prac_pop_df_1['gp_pop_quintile'] = pd.qcut(gp_prac_pop_df_1['Number of patients registered at GP practices in London'], 5, labels=False)
 colordict = {0: 'green', 1: 'lightgreen', 2: 'orange', 3: 'red', 4: 'darkred'}
-frame = folium.Figure(width=900, height=700)
+frame = folium.Figure(width=900, height=500)
 fig_2 = folium.Map(
     location=[51.5, -0.1],
     tiles="cartodbpositron",
@@ -150,7 +150,7 @@ gp_prac_pop_df_1['Number of patients registered at GP practices in London'],
 gp_prac_pop_df_1['gp_pop_quintile']):
     folium.CircleMarker(
         [lat, lon],
-        radius=0.05*(math.sqrt(population)),
+        radius=0.06*(math.sqrt(population)),
         popup = folium.Popup('<b>' + 'Name: ' + '</b>'  + str(name) + '<br>'
                  '<b>' + 'Address: ' + '</b>' + str(address) + '<br>'
                  '<b>' + 'Number of Patients Registered: ' + '</b>' + str(population) + '<br>', max_width=len(address)*20),
