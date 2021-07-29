@@ -1,6 +1,6 @@
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-## Number of Patients Registered at Indvidual GP Practices in London 
+## Number of Patients Registered at GP Practices in London 
 
 {% include update.html %}
 
