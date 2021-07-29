@@ -150,7 +150,7 @@ gp_prac_pop_df_1['Number of patients registered at GP practices in London'],
 gp_prac_pop_df_1['gp_pop_quintile']):
     folium.CircleMarker(
         [lat, lon],
-        radius=0.06*(math.sqrt(population)),
+        radius=0.075*((population/2)**(1./2.)+35),
         popup = folium.Popup('<b>' + 'Name: ' + '</b>'  + str(name) + '<br>'
                  '<b>' + 'Address: ' + '</b>' + str(address) + '<br>'
                  '<b>' + 'Number of Patients Registered: ' + '</b>' + str(population) + '<br>', max_width=len(address)*20),
