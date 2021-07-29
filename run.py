@@ -6,6 +6,10 @@ import zipfile
 import requests
 import plotly
 import plotly.graph_objects as go
+import folium 
+import math
+from geopy.geocoders import MapQuest
+from geopy.extra.rate_limiter import RateLimiter
 
 #Plot 1 and 2 start
 ## Get EPRACCUR data from NHSD 
@@ -125,7 +129,40 @@ plotly_obj = plotly.offline.plot(
 )
 with open("_includes/plotly_obj.html", "w") as file:
     file.write(plotly_obj)
-## Write out to file (.html) Plot 1 end 
+## Write out to file (.html) Plot 1 end
+
+##Visualization Plot 2
+file_name = 'assets/data/gp_pop_ldn_mapped.csv'
+gp_prac_pop_df = pd.read_csv(file_name)
+gp_prac_pop_df_1 = gp_prac_pop_df[gp_prac_pop_df['loc'].str.contains("US")==False]
+gp_prac_pop_df_1['gp_pop_quintile'] = pd.qcut(gp_prac_pop_df_1['Number of patients registered at GP practices in London'], 5, labels=False)
+colordict = {0: 'green', 1: 'lightgreen', 2: 'orange', 3: 'red', 4: 'darkred'}
+frame = folium.Figure(width=900, height=700)
+fig_2 = folium.Map(
+    location=[51.5, -0.1],
+    tiles="cartodbpositron",
+    zoom_start=10.2).add_to(frame)
+for lat, lon, name, address, population, pop_qin in zip(gp_prac_pop_df_1['Latitude'], 
+gp_prac_pop_df_1['Longitude'], 
+gp_prac_pop_df_1['Name'], 
+gp_prac_pop_df_1['Full Address'], 
+gp_prac_pop_df_1['Number of patients registered at GP practices in London'], 
+gp_prac_pop_df_1['gp_pop_quintile']):
+    folium.CircleMarker(
+        [lat, lon],
+        radius=0.05*(math.sqrt(population)),
+        popup = folium.Popup('<b>' + 'Name: ' + '</b>'  + str(name) + '<br>'
+                 '<b>' + 'Address: ' + '</b>' + str(address) + '<br>'
+                 '<b>' + 'Number of Patients Registered: ' + '</b>' + str(population) + '<br>', max_width=len(address)*20),
+        color='b',
+        key_on = pop_qin,
+        threshold_scale=[0,1,2,3,4,5],
+        fill_color=colordict[pop_qin],
+        fill=True,
+        fill_opacity=0.8
+        ).add_to(fig_2)
+fig_2 
+##Visualization Plot 2
 
 # Grab timestamp
 data_updated = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
