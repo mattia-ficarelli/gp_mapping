@@ -7,7 +7,8 @@ import requests
 import plotly
 import plotly.graph_objects as go
 import folium 
-import math
+from branca.element import Template, MacroElement
+
 from geopy.geocoders import MapQuest
 from geopy.extra.rate_limiter import RateLimiter
 
@@ -65,16 +66,17 @@ gp_pop_df_1 = gp_pop_df.drop(columns = {'PUBLICATION', 'EXTRACT_DATE', 'TYPE', '
 
 ##Merge EPRACCUR and patients registered at GP practices data 
 gp_pop_ldn = gp_practice_df_ldn_3.join(gp_pop_df_1, rsuffix='Organisation Code')
-gp_pop_ldn.rename(columns={'Number of patients registered at GP practices in England': 'Number of patients registered at GP practices in London'}, inplace=True)
+gp_pop_ldn.rename(columns={'Number of patients registered at GP practices in England': 'Number of patients registered at the GP practice'}, inplace=True)
 gp_pop_ldn["Address"] = gp_pop_ldn[["Full Address", "Postcode"]].agg(', '.join, axis=1)
 gp_pop_ldn_1 = gp_pop_ldn.drop(columns={'Organisation CodeOrganisation Code', 'National Grouping', 'Postcode', 'Full Address'})
+gp_pop_ldn_1 = gp_pop_ldn_1[["Organisation Code", "Name", "Address", "Contact Telephone Number", "Number of patients registered at the GP practice"]]
 ##Merge EPRACCUR and patients registered at GP practices data end
 
 ##Visualization Plot 1
-x0 = gp_pop_ldn_1['Number of patients registered at GP practices in London']
+x0 = gp_pop_ldn_1['Number of patients registered at the GP practice']
 x1 = gp_pop_df_1['Number of patients registered at GP practices in England']
 count_england = gp_pop_df_1['Number of patients registered at GP practices in England'].count()
-count_london = gp_pop_ldn_1['Number of patients registered at GP practices in London'].count()
+count_london = gp_pop_ldn_1['Number of patients registered at the GP practice'].count()
 fig_1 = go.Figure()
 fig_1.add_trace(go.Box(x=x0, 
 boxmean=True,  
@@ -112,14 +114,14 @@ fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         xref="paper",
                                         yref="paper"))
 fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
-                                        x=0.322,
+                                        x=0.323,
                                         y=-0.46,
                                         showarrow=False,
                                         text="Number of GP practices in London: %s" %count_london,
                                         textangle=0,
                                         xanchor='right',
                                         xref="paper",
-                                        yref="paper"))   
+                                        yref="paper"))      
 ##Visualization Plot 1 end 
                                       
 ## Write out to file (.html) Plot 1
@@ -161,8 +163,110 @@ gp_prac_pop_df_1['gp_pop_quintile']):
         fill=True,
         fill_opacity=0.8
         ).add_to(fig_2)
-fig_2 
-##Visualization Plot 2
+##Visualization Plot 2 end 
+
+##CSS styling Plot 2 legend
+template = """
+{% macro html(this, kwargs) %}
+
+<!doctype html>
+<html lang="en">
+<div id='maplegend' class='maplegend' 
+    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+     border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
+     
+<div class='legend-title'>GP Patient Number Quintile</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li><span style='width:8px;height:8px;background:green;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
+1</li>
+    <li><span style='width:12px;height:12px;background:lightgreen;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
+2</li>
+    <li><span style='width:16px;height:16px;background:orange;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
+3</li>
+    <li><span style='width:20px;height:20px;background:red;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
+4</li>
+    <li><span style='width:24px;height:24px;background:darkred;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
+5</li>
+  </ul>
+  <!-- <ul class='legend-labels-2'>
+    <li><span style='background:lightgreen;opacity:0.8;'></span></ul><ul class='legend-text'>2</li>
+  </ul>
+  <ul class='legend-labels-3'>
+    <li><span style='background:orange;opacity:0.8;'></span></ul><ul class='legend-text'>3</li>
+  </ul>
+  <ul class='legend-labels-4'>
+    <li><span style='background:red;opacity:0.8;'></span></ul><ul class='legend-text'>4</li>
+  </ul>
+  <ul class='legend-labels-5'>
+    <li><span style='background:darkred;opacity:0.8;'></span></ul><ul class='legend-text'>5</li>
+  </ul> -->
+</div>
+<b><div class='legend-source'>Note: </b>Circle radius is relative to the number <br> of patients registered at a GP practice</br></div>
+</div>
+ 
+</body>
+</html>
+
+<style type='text/css'>
+  .maplegend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 85%;
+    }
+  .maplegend .legend-text {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 85%;
+    }
+  .maplegend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .maplegend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .maplegend ul.legend-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .maplegend ul.legend-labels li {
+    display: flex;
+    align-items: center;
+  }
+  .maplegend ul.legend-labels li span {
+    height: 24px;
+    width: 24px;
+    border-radius: 5em;
+  }
+
+  .maplegend .legend-source {
+    font-size: 80%;
+    color: #777;
+    clear: both;
+    }
+  .maplegend a {
+    color: #777;
+    }
+</style>
+{% endmacro %}"""
+macro = MacroElement()
+macro._template = Template(template)
+fig_2.get_root().add_child(macro)
+##CSS styling Plot 2 legend end 
+
+## Write out to file (.html) Plot 2
+fig_2.save("assets/folium/folium_obj.html", "w")
+## Write out to file (.html) Plot 2
 
 # Grab timestamp
 data_updated = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
