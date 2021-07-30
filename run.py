@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 import folium 
 from branca.element import Template, MacroElement
 
-from geopy.geocoders import MapQuest
+from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 
 #Plot 1 and 2 start
@@ -133,28 +133,39 @@ with open("_includes/plotly_obj.html", "w") as file:
     file.write(plotly_obj)
 ## Write out to file (.html) Plot 1 end
 
-##Visualization Plot 2
+##Get GP practice coordinates using geopy
 file_name = 'assets/data/gp_pop_ldn_mapped.csv'
-gp_prac_pop_df = pd.read_csv(file_name)
-gp_prac_pop_df_1 = gp_prac_pop_df[gp_prac_pop_df['loc'].str.contains("US")==False]
-gp_prac_pop_df_1['gp_pop_quintile'] = pd.qcut(gp_prac_pop_df_1['Number of patients registered at GP practices in London'], 5, labels=False)
+#geolocator = Nominatim(user_agent="open_access_nhs")
+#geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
+
+#gp_pop_ldn_1["loc"] = gp_pop_ldn_1["Postcode"].apply(geolocator.geocode)
+#gp_pop_ldn_1["Point"]= gp_pop_ldn_1["loc"].apply(lambda loc: tuple(loc.point) if loc else None)
+#gp_pop_ldn_1[['Latitude', 'Longitude', 'Altitude']] = pd.DataFrame(gp_pop_ldn_1['Point'].to_list(), index=gp_pop_ldn_1.index)
+#gp_pop_ldn_1.to_csv(file_name)
+##Get GP practice coordinates using geopy
+
+##Visualization Plot 2
+gp_prac_pop_df_1 = pd.read_csv(file_name, index_col=0)
+gp_prac_pop_df_1['gp_pop_quintile'] = pd.qcut(gp_prac_pop_df_1['Number of patients registered at the GP practice'], 5, labels=False)
 colordict = {0: 'green', 1: 'lightgreen', 2: 'orange', 3: 'red', 4: 'darkred'}
 frame = folium.Figure(width=900, height=500)
 fig_2 = folium.Map(
     location=[51.5, -0.1],
     tiles="cartodbpositron",
     zoom_start=10.2).add_to(frame)
-for lat, lon, name, address, population, pop_qin in zip(gp_prac_pop_df_1['Latitude'], 
+for lat, lon, name, address, population, number, pop_qin in zip(gp_prac_pop_df_1['Latitude'], 
 gp_prac_pop_df_1['Longitude'], 
 gp_prac_pop_df_1['Name'], 
-gp_prac_pop_df_1['Full Address'], 
-gp_prac_pop_df_1['Number of patients registered at GP practices in London'], 
+gp_prac_pop_df_1['Address'], 
+gp_prac_pop_df_1['Number of patients registered at the GP practice'],
+gp_prac_pop_df_1['Contact Telephone Number'], 
 gp_prac_pop_df_1['gp_pop_quintile']):
     folium.CircleMarker(
         [lat, lon],
-        radius=0.075*((population/2)**(1./2.)+35),
+        radius=0.065*((population/2)**(1./2.)+35),
         popup = folium.Popup('<b>' + 'Name: ' + '</b>'  + str(name) + '<br>'
                  '<b>' + 'Address: ' + '</b>' + str(address) + '<br>'
+                 '<b>' + 'Telephone Number: ' + '</b>' + str(number) + '<br>'
                  '<b>' + 'Number of Patients Registered: ' + '</b>' + str(population) + '<br>', max_width=len(address)*20),
         color='b',
         key_on = pop_qin,
@@ -267,6 +278,13 @@ fig_2.get_root().add_child(macro)
 ## Write out to file (.html) Plot 2
 fig_2.save("assets/folium/folium_obj.html", "w")
 ## Write out to file (.html) Plot 2
+
+##Save data for plot 2 to csv
+gp_prac_pop_df_tosave = gp_prac_pop_df_1.drop(columns ={'Postcode', 'loc', 'Point', 'Altitude'})
+gp_prac_pop_df_tosave = gp_prac_pop_df_tosave.reset_index(drop = True)
+gp_prac_pop_df_tosave.index.name = 'Unique ID'
+gp_prac_pop_df_tosave.to_csv("assets/data/gp_pop_london_mapped_final.csv", index=False)
+##Save data for plot 2 to end
 
 # Grab timestamp
 data_updated = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
