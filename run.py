@@ -100,7 +100,7 @@ fig_1.update_layout(
     {"plot_bgcolor": "rgba(0, 0, 0, 0)", "paper_bgcolor": "rgba(0, 0, 0, 0)"},
     font = dict(family = "Arial", size = 16),
     autosize=True,
-    margin=dict(l=75, r=50, b=130, t=50, pad=4, autoexpand=True), hoverlabel=dict(
+    margin=dict(l=75, r=50, b=160, t=30, pad=4, autoexpand=True), hoverlabel=dict(
         font_size=12,
         font_family="Arial"
     ), xaxis=dict(title='Number of patients registered at individual GP practices', zeroline=False))
@@ -153,9 +153,10 @@ fig_2 = folium.Map(
     location=[51.5, -0.1],
     tiles="cartodbpositron",
     zoom_start=10.2).add_to(frame)
-for lat, lon, name, address, population, number, pop_qin in zip(gp_prac_pop_df_1['Latitude'], 
+for lat, lon, name, code, address, population, number, pop_qin in zip(gp_prac_pop_df_1['Latitude'], 
 gp_prac_pop_df_1['Longitude'], 
-gp_prac_pop_df_1['Name'], 
+gp_prac_pop_df_1['Name'],
+gp_prac_pop_df_1['Organisation Code'], 
 gp_prac_pop_df_1['Address'], 
 gp_prac_pop_df_1['Number of patients registered at the GP practice'],
 gp_prac_pop_df_1['Contact Telephone Number'], 
@@ -164,9 +165,10 @@ gp_prac_pop_df_1['gp_pop_quintile']):
         [lat, lon],
         radius=0.065*((population/2)**(1./2.)+35),
         popup = folium.Popup('<b>' + 'Name: ' + '</b>'  + str(name) + '<br>'
-                 '<b>' + 'Address: ' + '</b>' + str(address) + '<br>'
-                 '<b>' + 'Telephone Number: ' + '</b>' + str(number) + '<br>'
-                 '<b>' + 'Number of Patients Registered: ' + '</b>' + str(population) + '<br>', max_width=len(address)*20),
+        '<b>' + 'GP Practice Code: ' + '</b>' + str(code) + '<br>'
+        '<b>' + 'Address: ' + '</b>' + str(address) + '<br>'
+        '<b>' + 'Telephone Number: ' + '</b>' + str(number) + '<br>'
+        '<b>' + 'Number of Patients Registered: ' + '</b>' + str(population) + '<br>', max_width=len(address)*20),
         color='b',
         key_on = pop_qin,
         threshold_scale=[0,1,2,3,4,5],
