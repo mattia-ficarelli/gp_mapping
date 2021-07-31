@@ -37,7 +37,7 @@
 
 ## About this page
 
-This page is built using end-to-end open source analytical tools including: [The NHS Digital Service Manual](https://service-manual.nhs.uk/), [python](https://nhs-pycom.net/), [plotly](https://plotly.com/python/), [folium](http://python-visualization.github.io/folium/), [geopy](https://geopy.readthedocs.io/en/stable/), [github.io](https://pages.github.com/), and [github actions](https://github.com/features/actions).
+This page is built using end-to-end open source analytical tools including: [The NHS Digital Service Manual](https://service-manual.nhs.uk/), [python](https://nhs-pycom.net/), [plotly](https://plotly.com/python/), [folium](http://python-visualization.github.io/folium/), [geopy](https://geopy.readthedocs.io/en/stable/), [beautiful soup](https://www.crummy.com/software/BeautifulSoup/), [github.io](https://pages.github.com/), and [github actions](https://github.com/features/actions).
 
 <div class="nhsuk-action-link">
   <a class="nhsuk-action-link__link" href="https://github.com/nhsx/open-analytics-template">
