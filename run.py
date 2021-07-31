@@ -8,7 +8,8 @@ import plotly
 import plotly.graph_objects as go
 import folium 
 from branca.element import Template, MacroElement
-
+from bs4 import BeautifulSoup
+from datetime import datetime
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 
@@ -53,7 +54,14 @@ gp_practice_df_ldn_3 = gp_practice_df_ldn_2.reset_index(drop = True)
 ##EPRACCUR data processing end 
 
 ##Get Patients registered at GP practices data from NHSD
-csv_url = "https://files.digital.nhs.uk/40/2232E5/gp-reg-pat-prac-all.csv"
+current_year = datetime.now().strftime('%Y')
+current_month = datetime.now().strftime('%B').lower()
+month_year_variable = current_month + '-' + current_year 
+url = "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/%s" %month_year_variable 
+response = urllib.request.urlopen(url)
+soup = BeautifulSoup(response.read(), "lxml")
+data = soup.select_one("a[href*='gp-reg-pat-prac-all.csv']")
+csv_url = data['href']
 req = requests.get(csv_url)
 url_content = req.content
 csv_file = open('assets/data/gp_pop_data.csv', 'wb')
