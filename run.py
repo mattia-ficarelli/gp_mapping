@@ -133,21 +133,34 @@ with open("_includes/plotly_obj.html", "w") as file:
     file.write(plotly_obj)
 ## Write out to file (.html) Plot 1 end
 
-##Get GP practice coordinates using geopy
+#Merge new GP practice data with data from previous timepoint to avoid uncessary Nomatin API requests
 file_name = 'assets/data/gp_pop_ldn_mapped.csv'
-#geolocator = Nominatim(user_agent="open_access_nhs")
-#geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
+old_data = pd.read_csv(file_name, index_col=0)
+gp_pop_ldn_1 = gp_pop_ldn_1.merge(old_data[['Organisation Code','loc', 'Point', 'Latitude', 'Longitude', 'Altitude']],on='Organisation Code', how = 'left')
+gp_pop_ldn_1.rename(columns={'loc_x': 'loc', 'Point_x': 'Point', 'Latitude_x': 'Latitude', 'Longitude_x': 'Longitude', 'Altitude_x': 'Altitude' }, inplace=True)
+gp_pop_ldn_1
+#Merge new GP practice data with data from previous timepoint to avoid uncessary Nomatin API requests end
 
-#gp_pop_ldn_1["loc"] = gp_pop_ldn_1["Postcode"].apply(geolocator.geocode)
-#gp_pop_ldn_1["Point"]= gp_pop_ldn_1["loc"].apply(lambda loc: tuple(loc.point) if loc else None)
-#gp_pop_ldn_1[['Latitude', 'Longitude', 'Altitude']] = pd.DataFrame(gp_pop_ldn_1['Point'].to_list(), index=gp_pop_ldn_1.index)
-#gp_pop_ldn_1.to_csv(file_name)
-##Get GP practice coordinates using geopy
+##Get GP practice coordinates using geopy if New GP practcies added to EPRACCUR 
+geolocator = Nominatim(user_agent="open_access_nhs")
+geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
+
+if gp_pop_ldn_1['loc'].count() != gp_pop_ldn_1['Organisation Code'].count():
+    missing_data = pd.isnull(gp_pop_ldn_1["loc"])
+    missing_data_df = gp_pop_ldn_1[missing_data]
+    missing_data_df["loc"] = missing_data_df["Postcode"].apply(geolocator.geocode)
+    missing_data_df["Point"]= missing_data_df["loc"].apply(lambda loc: tuple(loc.point) if loc else None)
+    missing_data_df[['Latitude', 'Longitude', 'Altitude']] = pd.DataFrame(missing_data_df['Point'].to_list(), index=missing_data_df.index)
+    gp_pop_ldn_1 = gp_pop_ldn_1.dropna()
+    gp_pop_ldn_1 = pd.concat([gp_pop_ldn_1, missing_data_df], ignore_index=True)
+gp_pop_ldn_1.to_csv(file_name)
+##Get GP practice coordinates using geopy if New GP practcies added to EPRACCUR end 
 
 ##Visualization Plot 2
 gp_prac_pop_df_1 = pd.read_csv(file_name, index_col=0)
-gp_prac_pop_df_1['gp_pop_quintile'] = pd.qcut(gp_prac_pop_df_1['Number of patients registered at the GP practice'], 5, labels=False)
-colordict = {0: 'green', 1: 'lightgreen', 2: 'orange', 3: 'red', 4: 'darkred'}
+gp_prac_pop_df_1['GP Patient Number Quintile'] = pd.qcut(gp_prac_pop_df_1['Number of patients registered at the GP practice'], 5, labels=False)
+gp_prac_pop_df_1['GP Patient Number Quintile'] = gp_prac_pop_df_1['GP Patient Number Quintile']  + 1
+colordict = {1: 'green', 2: 'lightgreen', 3: 'orange', 4: 'red', 5: 'darkred'}
 frame = folium.Figure(width=900, height=500)
 fig_2 = folium.Map(
     location=[51.5, -0.1],
@@ -160,7 +173,7 @@ gp_prac_pop_df_1['Organisation Code'],
 gp_prac_pop_df_1['Address'], 
 gp_prac_pop_df_1['Number of patients registered at the GP practice'],
 gp_prac_pop_df_1['Contact Telephone Number'], 
-gp_prac_pop_df_1['gp_pop_quintile']):
+gp_prac_pop_df_1['GP Patient Number Quintile']):
     folium.CircleMarker(
         [lat, lon],
         radius=0.065*((population/2)**(1./2.)+35),
