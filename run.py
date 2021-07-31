@@ -69,7 +69,7 @@ gp_pop_ldn = gp_practice_df_ldn_3.join(gp_pop_df_1, rsuffix='Organisation Code')
 gp_pop_ldn.rename(columns={'Number of patients registered at GP practices in England': 'Number of patients registered at the GP practice'}, inplace=True)
 gp_pop_ldn["Address"] = gp_pop_ldn[["Full Address", "Postcode"]].agg(', '.join, axis=1)
 gp_pop_ldn_1 = gp_pop_ldn.drop(columns={'Organisation CodeOrganisation Code', 'National Grouping', 'Full Address'})
-gp_pop_ldn_1 = gp_pop_ldn_1[["Organisation Code", "Name", "Address", "Contact Telephone Number", "Number of patients registered at the GP practice"]]
+gp_pop_ldn_1 = gp_pop_ldn_1[["Organisation Code", "Name", "Address", "Postcode", "Contact Telephone Number", "Number of patients registered at the GP practice"]]
 ##Merge EPRACCUR and patients registered at GP practices data end
 
 ##Visualization Plot 1
@@ -294,7 +294,7 @@ fig_2.save("assets/folium/folium_obj.html", "w")
 ## Write out to file (.html) Plot 2
 
 ##Save data for plot 2 to csv
-gp_prac_pop_df_tosave = gp_pop_ldn_1.drop(columns ={'Postcode', 'loc', 'Point', 'Altitude'})
+gp_prac_pop_df_tosave = gp_prac_pop_df_1.drop(columns ={'Postcode', 'loc', 'Point', 'Altitude'})
 gp_prac_pop_df_tosave = gp_prac_pop_df_tosave.reset_index(drop = True)
 gp_prac_pop_df_tosave.index.name = 'Unique ID'
 gp_prac_pop_df_tosave.to_csv("assets/data/gp_pop_london_mapped_final.csv", index=False)
