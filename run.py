@@ -138,7 +138,6 @@ file_name = 'assets/data/gp_pop_ldn_mapped.csv'
 old_data = pd.read_csv(file_name, index_col=0)
 gp_pop_ldn_1 = gp_pop_ldn_1.merge(old_data[['Organisation Code','loc', 'Point', 'Latitude', 'Longitude', 'Altitude']],on='Organisation Code', how = 'left')
 gp_pop_ldn_1.rename(columns={'loc_x': 'loc', 'Point_x': 'Point', 'Latitude_x': 'Latitude', 'Longitude_x': 'Longitude', 'Altitude_x': 'Altitude' }, inplace=True)
-gp_pop_ldn_1
 #Merge new GP practice data with data from previous timepoint to avoid uncessary Nomatin API requests end
 
 ##Get GP practice coordinates using geopy if New GP practcies added to EPRACCUR 
@@ -295,7 +294,7 @@ fig_2.save("assets/folium/folium_obj.html", "w")
 ## Write out to file (.html) Plot 2
 
 ##Save data for plot 2 to csv
-gp_prac_pop_df_tosave = gp_prac_pop_df_1.drop(columns ={'Postcode', 'loc', 'Point', 'Altitude'})
+gp_prac_pop_df_tosave = gp_pop_ldn_1.drop(columns ={'Postcode', 'loc', 'Point', 'Altitude'})
 gp_prac_pop_df_tosave = gp_prac_pop_df_tosave.reset_index(drop = True)
 gp_prac_pop_df_tosave.index.name = 'Unique ID'
 gp_prac_pop_df_tosave.to_csv("assets/data/gp_pop_london_mapped_final.csv", index=False)
