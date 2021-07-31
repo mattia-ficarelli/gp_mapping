@@ -68,7 +68,7 @@ gp_pop_df_1 = gp_pop_df.drop(columns = {'PUBLICATION', 'EXTRACT_DATE', 'TYPE', '
 gp_pop_ldn = gp_practice_df_ldn_3.join(gp_pop_df_1, rsuffix='Organisation Code')
 gp_pop_ldn.rename(columns={'Number of patients registered at GP practices in England': 'Number of patients registered at the GP practice'}, inplace=True)
 gp_pop_ldn["Address"] = gp_pop_ldn[["Full Address", "Postcode"]].agg(', '.join, axis=1)
-gp_pop_ldn_1 = gp_pop_ldn.drop(columns={'Organisation CodeOrganisation Code', 'National Grouping', 'Postcode', 'Full Address'})
+gp_pop_ldn_1 = gp_pop_ldn.drop(columns={'Organisation CodeOrganisation Code', 'National Grouping', 'Full Address'})
 gp_pop_ldn_1 = gp_pop_ldn_1[["Organisation Code", "Name", "Address", "Contact Telephone Number", "Number of patients registered at the GP practice"]]
 ##Merge EPRACCUR and patients registered at GP practices data end
 
