@@ -7785,6 +7785,8 @@ b {
   color: #212b32;
   border: 1px solid #ffeb3b;
   padding-top: 0 !important;
+  text-align: justify;
+  text-justify: inter-word;
   /* [1] */
 }
 .nhsuk-warning-callout > *:first-child {
