@@ -8,12 +8,10 @@
 
 <div class="nhsuk-warning-callout">
   <h3 class="nhsuk-warning-callout__label">
-    Important<span class="nhsuk-u-visually-hidden">:</span>
+    Data Quality<span class="nhsuk-u-visually-hidden">:</span>
   </h3>
-  <p>This project is currently in development. For more information please contact <a
-                class="nhsuk-footer__list-item-link"
-                href="{{ site.github.owner_url }}"
-                >{{ site.github.owner_name }}</a>
+  <p>The outbreak of Coronavirus (COVID-19) has led to changes in the work of General Practices and consequently data collection initiatives by NHS Digital. Until activity in this healthcare setting stabilises, conclusions drawn from these data should take into consideration the country's circumstances. GP practices in London are defined as any practice falling within the London Commissioning Region (Y56). Babylon Healthcare’s online GP at Hand practices (GP Code: E85124 and Y06487) are excluded from the analyses. 
+  </a>
    </p>
 </div>
 

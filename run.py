@@ -49,7 +49,7 @@ gp_practice_df_eng_3 = gp_practice_df_eng_2.drop( columns = {"Status Code", "Pre
 gp_practice_df_ldn = gp_practice_df_eng_3[gp_practice_df_eng_3["National Grouping"].str.contains("Y56")==True]
 gp_practice_df_ldn['Name'] = gp_practice_df_ldn['Name'].str.replace('Gp', 'GP')
 gp_practice_df_ldn['Full Address'] = gp_practice_df_ldn['Full Address'].str.replace(' ,', ' ').str.replace('  ', ' ').str.replace('Gp', 'GP').map(lambda x: x.rstrip(', '))
-gp_practice_df_ldn_2  = gp_practice_df_ldn[gp_practice_df_ldn["Name"].str.contains("Babylon")==False]
+gp_practice_df_ldn_2  = gp_practice_df_ldn[gp_practice_df_ldn["Organisation Code"].str.contains("E85124|Y06487")==False]
 gp_practice_df_ldn_3 = gp_practice_df_ldn_2.reset_index(drop = True)
 ##EPRACCUR data processing end 
 
@@ -70,6 +70,8 @@ else:
     gp_pop_df = pd.read_csv('assets/data/gp_pop_data.csv')
     gp_pop_df.rename(columns={'CODE': 'Organisation Code', 'NUMBER_OF_PATIENTS': 'Number of patients registered at GP practices in England'}, inplace=True)
     gp_pop_df_1 = gp_pop_df.drop(columns = {'PUBLICATION', 'EXTRACT_DATE', 'TYPE', 'CCG_CODE', 'ONS_CCG_CODE', 'SEX', 'AGE', 'POSTCODE'})
+    gp_pop_df_1 = gp_pop_df_1[gp_pop_df_1 ["Organisation Code"].str.contains("E85124|Y06487")==False]
+    gp_pop_df_1 = gp_pop_df_1.reset_index(drop = True)
 ##Get Patients registered at GP practices data from NHSD end 
 
 ##Merge EPRACCUR and patients registered at GP practices data 
