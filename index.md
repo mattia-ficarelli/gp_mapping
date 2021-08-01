@@ -2,9 +2,11 @@
 
 ## Number of Patients Registered at GP Practices in London 
 
-{% include update.html %}
+Data sources: [NHS Digital](https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice) and [NHS Prescription Services](https://digital.nhs.uk/services/organisation-data-service/file-downloads/gp-and-gp-practice-related-data) 
 
 <hr class="nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-6">
+
+{% include update.html %}
 
 <div class="nhsuk-warning-callout">
   <h3 class="nhsuk-warning-callout__label">
@@ -19,6 +21,8 @@
 {% include plotly_obj.html %}
 
 ### Number of patients registered at indvidual GP Practices in London
+
+<p>Each circle marker on the map represents an indvidual GP practice. Click on the merker for </p>
 
 <iframe width= "900" height="700"  src="assets/folium/folium_obj.html" style="border:none;"></iframe>
 
