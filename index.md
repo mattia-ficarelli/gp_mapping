@@ -2,11 +2,15 @@
 
 ## Number of Patients Registered at GP Practices in London 
 
-The NHS is currently experiencing some of the most severe pressures in its 70-year history and GP surgeries across the country are experiencing significant rising demand while struggling to recruit staff [[1]](https://www.bma.org.uk/advice-and-support/nhs-delivery-and-workforce/pressures/pressures-in-general-practice).
+<div class="nhsuk-warning-callout">
+The NHS is currently experiencing some of the most severe pressures in its 70-year history and GP surgeries across the country are experiencing significant rising demand for services while struggling to recruit staff [[1]](https://www.bma.org.uk/advice-and-support/nhs-delivery-and-workforce/pressures/pressures-in-general-practice).
 
-As outlined by NHS England in the [General Practice Forward View](https://www.england.nhs.uk/gp/gpfv/) there is an increasing need to implement new innovative ways of delivering primary care at scale. One possible solution is GP practice mergers. Mergers, typically, involve two or more neighbouring practices coming together to pool resources and staff while increasing patient list size and accordingly practice income. However, the benefits of mergers must be weighed against the difficulties that can arise. 
+As outlined by NHS England in the [General Practice Forward View](https://www.england.nhs.uk/gp/gpfv/) there is an increasing need to implement new innovative ways of delivering primary care at scale. One possible solution is GP practice mergers. Mergers, typically, involve two or more neighbouring practices coming together to pool resources and staff while increasing patient list size and accordingly practice income. However, the benefits of mergers must be weighed against the difficulties that can arise [[2]](https://www.england.nhs.uk/south/wp-content/uploads/sites/6/2015/12/guide-mergers-gp.pdf).
+
+This page tracks the number of patients registered at individual GP Practices, with a focus on practices in the [London Commissioning Region](https://www.england.nhs.uk/commissioning/).
 
 Data sources: [NHS Digital](https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice) and [NHS Prescription Services](https://digital.nhs.uk/services/organisation-data-service/file-downloads/gp-and-gp-practice-related-data) 
+</div>
 
 <hr class="nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-6">
 
