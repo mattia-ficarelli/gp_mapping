@@ -61,15 +61,17 @@ url = "https://digital.nhs.uk/data-and-information/publications/statistical/pati
 response = urllib.request.urlopen(url)
 soup = BeautifulSoup(response.read(), "lxml")
 data = soup.select_one("a[href*='gp-reg-pat-prac-all.csv']")
-csv_url = data['href']
-req = requests.get(csv_url)
-url_content = req.content
-csv_file = open('assets/data/gp_pop_data.csv', 'wb')
-csv_file.write(url_content)
-csv_file.close()
-gp_pop_df = pd.read_csv('assets/data/gp_pop_data.csv')
-gp_pop_df.rename(columns={'CODE': 'Organisation Code', 'NUMBER_OF_PATIENTS': 'Number of patients registered at GP practices in England'}, inplace=True)
-gp_pop_df_1 = gp_pop_df.drop(columns = {'PUBLICATION', 'EXTRACT_DATE', 'TYPE', 'CCG_CODE', 'ONS_CCG_CODE', 'SEX', 'AGE', 'POSTCODE'})
+if data != None: 
+    csv_url = data['href']
+    req = requests.get(csv_url)
+    url_content = req.content
+    csv_file = open('assets/data/gp_pop_data.csv', 'wb')
+    csv_file.write(url_content)
+    csv_file.close()
+else:
+    gp_pop_df = pd.read_csv('assets/data/gp_pop_data.csv')
+    gp_pop_df.rename(columns={'CODE': 'Organisation Code', 'NUMBER_OF_PATIENTS': 'Number of patients registered at GP practices in England'}, inplace=True)
+    gp_pop_df_1 = gp_pop_df.drop(columns = {'PUBLICATION', 'EXTRACT_DATE', 'TYPE', 'CCG_CODE', 'ONS_CCG_CODE', 'SEX', 'AGE', 'POSTCODE'})
 ##Get Patients registered at GP practices data from NHSD end 
 
 ##Merge EPRACCUR and patients registered at GP practices data 
