@@ -169,7 +169,7 @@ gp_pop_ldn_1.to_csv(file_name)
 gp_prac_pop_df_1 = pd.read_csv(file_name, index_col=0)
 gp_prac_pop_df_1['GP Patient Number Quintile'] = pd.qcut(gp_prac_pop_df_1['Number of patients registered at the GP practice'], 5, labels=False)
 gp_prac_pop_df_1['GP Patient Number Quintile'] = gp_prac_pop_df_1['GP Patient Number Quintile']  + 1
-colordict = {1: 'darkblue', 2: 'blue', 3: 'gray', 4: 'purple', 5: 'darkpurple'}
+colordict = {1: 'green', 2: 'lightgreen', 3: 'orange', 4: 'red', 5: 'darkred'}
 frame = folium.Figure(width=900, height=500)
 fig_2 = folium.Map(
     location=[51.5, -0.1],
