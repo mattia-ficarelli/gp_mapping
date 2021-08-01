@@ -124,7 +124,7 @@ fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
                                         xref="paper",
                                         yref="paper"))
 fig_1.add_annotation(dict(font=dict(family = "Arial",size=15),
-                                        x=0.322,
+                                        x=0.323,
                                         y=-0.46,
                                         showarrow=False,
                                         text="Number of GP practices in London: %s" %count_london,
