@@ -4,6 +4,8 @@
 
 {% include update.html %}
 
+<hr class="nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-6">
+
 <div class="nhsuk-warning-callout">
   <h3 class="nhsuk-warning-callout__label">
     Important<span class="nhsuk-u-visually-hidden">:</span>
@@ -14,8 +16,6 @@
                 >{{ site.github.owner_name }}</a>
    </p>
 </div>
-
-<hr class="nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-6">
 
 ### Number of patients registered at indvidual GP Practices 
 
