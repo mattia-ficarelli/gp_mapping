@@ -22,7 +22,9 @@ Data sources: [NHS Digital](https://digital.nhs.uk/data-and-information/publicat
 
 ### Number of patients registered at indvidual GP Practices in London
 
-<p>Each circle marker on the map represents an indvidual GP practice. Click on the merker for </p>
+<p>
+Each circle marker on the map represents a GP practice. Click on an indvidual marker for the name, GP practice code, address, contact information and the number of patients registered at the GP practice. 
+</p>
 
 <iframe width= "900" height="700"  src="assets/folium/folium_obj.html" style="border:none;"></iframe>
 
