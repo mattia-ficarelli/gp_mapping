@@ -10,6 +10,7 @@ import folium
 from branca.element import Template, MacroElement
 from bs4 import BeautifulSoup
 from datetime import datetime
+from dateutil.relativedelta import relativedelta
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 
@@ -67,11 +68,23 @@ if data != None:
     csv_file.write(url_content)
     csv_file.close()
 else:
-    gp_pop_df = pd.read_csv('assets/data/gp_pop_data.csv')
-    gp_pop_df.rename(columns={'CODE': 'Organisation Code', 'NUMBER_OF_PATIENTS': 'Number of patients registered at GP practices in England'}, inplace=True)
-    gp_pop_df_1 = gp_pop_df.drop(columns = {'PUBLICATION', 'EXTRACT_DATE', 'TYPE', 'CCG_CODE', 'ONS_CCG_CODE', 'SEX', 'AGE', 'POSTCODE'})
-    gp_pop_df_1 = gp_pop_df_1[gp_pop_df_1 ["Organisation Code"].str.contains("E85124|Y06487")==False]
-    gp_pop_df_1 = gp_pop_df_1.reset_index(drop = True)
+    last_month = datetime.now() - relativedelta(months=1)
+    last_month_year_variable = last_month.strftime('%B-%Y').lower()
+    url = "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/%s" %last_month_year_variable
+    response = urllib.request.urlopen(url)
+    soup = BeautifulSoup(response.read(), "lxml")
+    data = soup.select_one("a[href*='gp-reg-pat-prac-all.csv']")
+    csv_url = data['href']
+    req = requests.get(csv_url)
+    url_content = req.content
+    csv_file = open('assets/data/ccg_pop.csv', 'wb')
+    csv_file.write(url_content)
+    csv_file.close()
+gp_pop_df = pd.read_csv('assets/data/gp_pop_data.csv')
+gp_pop_df.rename(columns={'CODE': 'Organisation Code', 'NUMBER_OF_PATIENTS': 'Number of patients registered at GP practices in England'}, inplace=True)
+gp_pop_df_1 = gp_pop_df.drop(columns = {'PUBLICATION', 'EXTRACT_DATE', 'TYPE', 'CCG_CODE', 'ONS_CCG_CODE', 'SEX', 'AGE', 'POSTCODE'})
+gp_pop_df_1 = gp_pop_df_1[gp_pop_df_1 ["Organisation Code"].str.contains("E85124|Y06487")==False]
+gp_pop_df_1 = gp_pop_df_1.reset_index(drop = True)
 ##Get Patients registered at GP practices data from NHSD end 
 
 ##Merge EPRACCUR and patients registered at GP practices data 
