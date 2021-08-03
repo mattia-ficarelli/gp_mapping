@@ -77,7 +77,7 @@ else:
     csv_url = data['href']
     req = requests.get(csv_url)
     url_content = req.content
-    csv_file = open('assets/data/ccg_pop.csv', 'wb')
+    csv_file = open('assets/data/gp_pop_data.csv', 'wb')
     csv_file.write(url_content)
     csv_file.close()
 gp_pop_df = pd.read_csv('assets/data/gp_pop_data.csv')
