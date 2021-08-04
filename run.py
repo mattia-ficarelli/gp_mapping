@@ -182,6 +182,7 @@ gp_pop_ldn_1.to_csv(file_name)
 gp_prac_pop_df_1 = pd.read_csv(file_name, index_col=0)
 gp_prac_pop_df_1['GP Patient Number Quintile'] = pd.qcut(gp_prac_pop_df_1['Number of patients registered at the GP practice'], 5, labels=False)
 gp_prac_pop_df_1['GP Patient Number Quintile'] = gp_prac_pop_df_1['GP Patient Number Quintile']  + 1
+gp_prac_pop_df_1.sort_values('GP Patient Number Quintile')
 colordict = {1: 'green', 2: 'lightgreen', 3: 'cadetblue', 4: 'blue', 5: 'darkblue'}
 frame = folium.Figure(width=900, height=500)
 fig_2 = folium.Map(
@@ -318,6 +319,7 @@ fig_2.save("assets/folium/folium_obj.html", "w")
 
 ##Save data for plot 2 to csv
 gp_prac_pop_df_tosave = gp_prac_pop_df_1.drop(columns ={'Postcode', 'loc', 'Point', 'Altitude'})
+gp_prac_pop_df_tosave.sort_values('GP Patient Number Quintile')
 gp_prac_pop_df_tosave = gp_prac_pop_df_tosave.reset_index(drop = True)
 gp_prac_pop_df_tosave.index.name = 'Unique ID'
 gp_prac_pop_df_tosave.to_csv("assets/data/gp_pop_london_mapped_final.csv", index=False)
