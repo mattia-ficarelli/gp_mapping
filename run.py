@@ -182,7 +182,7 @@ gp_pop_ldn_1.to_csv(file_name)
 gp_prac_pop_df_1 = pd.read_csv(file_name, index_col=0)
 gp_prac_pop_df_1['GP Patient Number Quintile'] = pd.qcut(gp_prac_pop_df_1['Number of patients registered at the GP practice'], 5, labels=False)
 gp_prac_pop_df_1['GP Patient Number Quintile'] = gp_prac_pop_df_1['GP Patient Number Quintile']  + 1
-colordict = {1: 'green', 2: 'lightgreen', 3: 'orange', 4: 'red', 5: 'darkred'}
+colordict = {1: 'green', 2: 'lightgreen', 3: 'cadetblue', 4: 'blue', 5: 'darkblue'}
 frame = folium.Figure(width=900, height=500)
 fig_2 = folium.Map(
     location=[51.5, -0.1],
@@ -230,11 +230,11 @@ template = """
 1</li>
     <li><span style='width:12px;height:12px;background:lightgreen;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
 2</li>
-    <li><span style='width:16px;height:16px;background:orange;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
+    <li><span style='width:16px;height:16px;background:cadetblue;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
 3</li>
-    <li><span style='width:20px;height:20px;background:red;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
+    <li><span style='width:20px;height:20px;background:blue;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
 4</li>
-    <li><span style='width:24px;height:24px;background:darkred;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
+    <li><span style='width:24px;height:24px;background:darkblue;opacity:0.8;'></span><p>&nbsp;&nbsp;</p>
 5</li>
   </ul>
   <!-- <ul class='legend-labels-2'>
