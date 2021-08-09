@@ -98,7 +98,7 @@ E84076,Oxgate Gardens Surgery,"81 Oxgate Gardens, London, NW2 6EA",020 84327337,
 E84078,Kingsbury Health And Wellbeing,"245 Stag Lane, Kingsbury, London, NW9 0EF",020 82040777,2715,51.59173323358778,-0.2655082258282455,1
 E84080,Staverton Surgery,"Staverton Medical Centre, 51 Staverton Road, London, NW2 5HA",020 84591359,26,51.54418234276884,-0.225840339531533,1
 E84083,Lanfranc Medical Centre,"Lanfranc Medical Centre, Lanfranc Court, Greenford Road,Harrow, Middlesex, HA1 3QE",020 84221813,11823,51.5615855543414,-0.3327458169671346,5
-E84086,Walm Lane Surgery,"Walm Lane Surgery, 114 Walm Lane, Willesden Green, London, NW2 4RT",020 84520366,10432,51.550045399999995,-0.2196844,4
+E84086,Walm Lane Surgery,"Walm Lane Surgery, 114 Walm Lane, Willesden Green, London, NW2 4RT",020 84520366,10432,51.5500454,-0.2196844,4
 E84601,Kenton Bridge Medical Centre Dr Golden,"The Kenton Bridge Med Ctr, 155-175 Kenton Road, Kenton, Harrow, Middlesex, HA3 0YX",020 89076989,12873,51.582134750216596,-0.3165066794113948,5
 E84617,The Civic Medical Centre,"The Civic Medical Centre, 18-20 Bethecar Road, Harrow, Middlesex, HA1 1SE",020 84279445,9455,51.58715486699644,-0.3374974169141679,4
 E84620,Preston Road Surgery,"Preston Road Surgery, 56 Preston Road, Wembley, Middlesex, HA9 8LB",020 89046442,4592,51.56490863104341,-0.2924420913055699,2
@@ -138,7 +138,7 @@ E85008,North Fulham Surgery,"North Fulham Surgery, 82 Lillie Road, Fulham, Londo
 E85012,Ks Medical Centre,"Ks Medical Centre, 33 Dormers Wells Lane, Southall, Middlesex, UB1 3HY",020 85743986,6027,51.51374131036472,-0.3642968398303454,3
 E85013,Westseven GP,"Hanwell Health Centre, 20 Church Road, Hanwell, London, W7 1DR",020 85797337,1,51.5092399,-0.3344178,1
 E85014,Northfields Surgery,"Northfields Surgery, 61 Northfield Avenue, Ealing, London, W13 9QP",020 85671612,226,51.505139232485895,-0.3189539218715106,1
-E85015,Hounslow Medical Centre,"Hounslow Medical Centre, 134 Bath Road, Hounslow, Middlesex, TW3 3ET",020 86301011,10430,51.470135,-0.37852399999999997,4
+E85015,Hounslow Medical Centre,"Hounslow Medical Centre, 134 Bath Road, Hounslow, Middlesex, TW3 3ET",020 86301011,10430,51.470135,-0.378524,4
 E85016,Richford Gate Medical Centre,"Richford Gate Med Pract, Richford Gate P.C.C., Richford Street, London, W6 7HY",020 33156655,7609,51.50043643343893,-0.2265743557052903,3
 E85018,Dr Sood'S Practice,"Heston Health Centre, 25 Cranford Lane, Heston, Hounslow, Middlesex, TW5 9ER",020 86303410,15822,51.48396697712721,-0.3823860174622512,5
 E85019,Crown Street Surgery,"Crown Street Surgery, 2 Lombard Ct,Crown Street, Acton, London, W3 8SA",020 89922010,9061,51.50739071832436,-0.273799686734275,4
@@ -153,7 +153,7 @@ E85029,"The Medical Centre, Dr Jefferies & Partn","The Medical Centre, 292 Munst
 E85030,Chiswick Health Practice,"Chiswick Health Centre, Fishers Lane, Chiswick, London, W4 1RX",020 86301600,3823,51.49356188368886,-0.259902101397666,1
 E85032,Ashchurch Surgery,"The Ashchurch Surgery, 134 Askew Road, Shepherds Bush, London, W12 9BP",0844 4778673,6697,51.50190033333333,-0.2423954333333333,3
 E85033,Hammersmith Surgery,"Hammersmith Surgery, 1 Hammersmith Bridge Road, Hammersmith, London, W6 9DU",020 87413944,20436,51.49096592444664,-0.2270715222516247,5
-E85034,Grosvenor House Surgery,"Grosvenor House, 147 The Broadway, West Ealing, London, W13 9BE",020 87992525,11719,51.5095722,-0.32761209999999996,5
+E85034,Grosvenor House Surgery,"Grosvenor House, 147 The Broadway, West Ealing, London, W13 9BE",020 87992525,11719,51.5095722,-0.3276121,5
 E85035,Mount Medical Centre,"Mount Medical Centre, 7 Market Parade, Hampton Rd West,Hanworth, Middlesex, TW13 6AJ",020 88938699,7030,51.44059950910055,-0.3877891714629155,3
 E85038,"The Surgery, Dr Mangwana & Partners","Palace Surgery, 510 Fulham Palace Road, Fulham, London, SW6 6JD",020 77366305,4351,51.47628164005228,-0.2158327484854989,2
 E85040,West4 GPs,"The Chiswick Health Ctr, Fishers Lane, Chiswick, London, W4 1RX",020 86303518,7296,51.49356188368886,-0.259902101397666,3
@@ -201,7 +201,7 @@ E85114,Crosslands Surgery,"1 Crosslands Avenue, Norwood Green, Southall, Middles
 E85115,Pentelow Practice,"26 Pentelow Gardens, Bedfont, Feltham, Middlesex, TW14 9EF",020 88902029,19073,51.45662045304142,-0.4165736395896844,5
 E85116,The Cuckoo Lane Practice,"1St Floor, 20 Church Road, Hanwell, London, W7 1DR",020 85674315,10367,51.5092399,-0.3344178,4
 E85118,The Fulham Medical Centre,"The Fulham Medical Centre, 446 Fulham Road, Fulham, London, SW6 1BG",020 73856001,4249,51.48073584170229,-0.1931203226388439,2
-E85119,The Mwh Practice,"The Broadway Health Ctr., 71-73 The Broadway, Southall, Middlesex, UB1 1LA",020 85747746,8644,51.511247097139176,-0.37960419442308796,4
+E85119,The Mwh Practice,"The Broadway Health Ctr., 71-73 The Broadway, Southall, Middlesex, UB1 1LA",020 85747746,8644,51.511247097139176,-0.379604194423088,4
 E85120,The Argyle Surgery,"The Argyle Surgery, 128 Argyle Road, West Ealing, London, W13 8ER",020 80901153,2079,51.52033718061824,-0.3225916844981813,1
 E85121,Guru Nanak Medical Centre,"Guru Nanak Medical Centre, 1-3 Woodlands Road, Southall, Middlesex, UB1 1EQ",020 85741246,9964,51.51177374807303,-0.3871513650109518,4
 E85122,The Florence Road Surgery,"The Florence Road Surgery, 26 Florence Road, Ealing, London, W5 3TX",020 85672111,7647,51.512717105379544,-0.2986169162321349,3
@@ -222,7 +222,7 @@ E85628,Elthorne Park Surgery,"Elthorne Park Surgery, 106 Elthorne Park Road, Han
 E85630,Western Avenue Surgery,"Western Avenue Surgery, 56 Western Avenue, Acton, London, W3 7TY",020 87434133,11215,51.51432761442964,-0.2527983721015115,4
 E85633,The Southall Medical Ctr.,"Southall Medical Centre, 223 Lady Margaret Road, Southall, Middlesex, UB1 2PT",020 85744381,10103,51.5189601849841,-0.3755397436609663,4
 E85635,The Vale Surgery,"97 The Vale, Acton, London, W3 7RG",020 87434086,8602,51.506499,-0.2520713,4
-E85636,Park Medical Centre,"Park Medical Centre, Inver Court,Invermead Cl, Hammersmith, London, W6 0QG",020 87417471,4519,51.49696875630704,-0.24293092721204002,2
+E85636,Park Medical Centre,"Park Medical Centre, Inver Court,Invermead Cl, Hammersmith, London, W6 0QG",020 87417471,4519,51.49696875630704,-0.24293092721204,2
 E85640,The Churchfield Road Surgery,"64 Churchfield Road, Acton, London, W3 6DL",020 89923854,4120,51.50876849217797,-0.2666144705178323,2
 E85643,Meadow View,"Meadow View, 141 Mandeville Road, Northolt, Middlesex, UB5 4LZ",020 84223181,10589,51.55086048874085,-0.3610186926376829,4
 E85649,Fulham Cross Medical Centre,"322 Lillie Road, Fulham, London, SW6 7PP",020 73851964,8364,51.482849114557524,-0.2141010311329108,4
@@ -250,7 +250,7 @@ E85712,Goodcare Practice,"Grand Union Health Centre, Taywood Road, Northolt, Mid
 E85713,Hounslow Family Practice,"77 Lampton Road, Hounslow, Middlesex, TW3 4JX",020 85721497,8665,51.47177347769326,-0.3668205246153809,4
 E85714,The Pitshanger Lane Surgery,"209 Pitshanger Lane, Ealing, London, W5 1RQ",020 89974747,5245,51.52648270792618,-0.3109484528830918,2
 E85715,Broadmead Surgery,"Grand Union Health Centre, Taywood Road, Northolt, Middlesex, UB5 6WL",020 33137570,22488,51.53151433728152,-0.3762607338020158,5
-E85716,Bath Road Surgery,"Hounslow Medical Centre, 134 Bath Road, Hounslow, Middlesex, TW3 3ET",020 85779035,5595,51.470135,-0.37852399999999997,2
+E85716,Bath Road Surgery,"Hounslow Medical Centre, 134 Bath Road, Hounslow, Middlesex, TW3 3ET",020 85779035,5595,51.470135,-0.378524,2
 E85718,Hatton Medical Practice,"Hatton Medical Practice, 186 Hatton Road, Bedfont, Feltham, Middlesex, TW14 9PY",020 88908311,7534,51.45787905528302,-0.4332848223920179,3
 E85719,Ashville Surgery,"Ashville Surgery, Swan House, Parsons Green Lane, Fulham, London, SW6 4HS",020 73717171,13957,51.47625507544593,-0.2011455353584446,5
 E85721,The Town Surgery,"21 St.Georges Avenue, Southall, Middlesex, UB1 1PZ",020 88138122,9208,51.5123986217638,-0.3776898607783592,4
@@ -260,7 +260,7 @@ E85734,Queens Park Medical Practice,"Feltham Centre For Health, 3Rd Floor, The C
 E85735,Brentford Family Practice,"Brentford Health Centre, Boston Manor Road, Brentford, Middlesex, TW8 8DS",020 86303822,10658,51.486759701556615,-0.3100545265524113,4
 E85736,Little Park Surgery,"Little Park Surgery, 281 Hounslow Rd, Hanworth, Feltham, Middlesex, TW13 5JG",020 88946588,4588,51.44259484324792,-0.3877189103349276,2
 E85739,Hmc Health Heston Great West,"Heston Health Centre, 25 Cranford Lane, Heston, Hounslow, Middlesex, TW5 9ER",020 86303414,6450,51.48396697712721,-0.3823860174622512,3
-E85740,The Lynwood Surgery,"9 Lynwood Road, Ealing, London, W5 1JQ",020 89977522,5481,51.52859439303248,-0.29963977900989197,2
+E85740,The Lynwood Surgery,"9 Lynwood Road, Ealing, London, W5 1JQ",020 89977522,5481,51.52859439303248,-0.299639779009892,2
 E85743,St. Georges Medical Ctr.,"St.Georges Medical Ctr., 276 Lady Margaret Road, Southall, Middlesex, UB1 2RX",020 85782421,3117,51.5215992171302,-0.3745521590360873,1
 E85744,Argyle Health-Isleworth Practice,"Isleworth Health Centre, 146 Twickenham Road, Isleworth, Middlesex, TW7 7DJ",020 86303604,2681,51.46781082351753,-0.3286898348015444,1
 E85745,Jubilee Gardens Medical Centre,"Jubilee Gardens Med Ctr, Jubilee Gardens, Southall, Middlesex, UB1 2TJ",020 33137806,4628,51.5210961975541,-0.3687611787044037,2
@@ -327,13 +327,13 @@ E87021,Shirland Medical,"Queens Park Health Centre, Dart Street, London, W10 4LD
 E87024,The Golborne Medical Centre,"12-16 Golborne Road, London, W10 5PG",020 89692058,5096,51.52394714637538,-0.2067626700418231,2
 E87026,Meanwhile Garden Medical Centre,"Meanwhile Garden Med Ctr, Unit 5, 1-31 Elkstone Road, London, W10 5NT",020 89605620,3320,51.522227890959215,-0.2031256149472586,1
 E87029,Portland Road Practice,"Portland Road Practice, 16 Portland Road, London, W11 4LA",020 77277711,5905,51.50736632411455,-0.2080189560946531,3
-E87034,Pimlico Health At The Marven Surgery,"Marven Medical Centre, 46-50 Lupus Street, Westminster, London, SW1V 3EB",020 78341160,6852,51.488400899999995,-0.13748849999999999,3
+E87034,Pimlico Health At The Marven Surgery,"Marven Medical Centre, 46-50 Lupus Street, Westminster, London, SW1V 3EB",020 78341160,6852,51.4884009,-0.1374885,3
 E87037,Connaught Square Practice,"41 Connaught Square, London, W2 2HL",020 74024026,1595,51.51397354323081,-0.1642637096910677,1
-E87038,Elgin Clinic,"40 Elgin Avenue, London, W9 3QT",020 72860747,11892,51.524802799999996,-0.1985547,5
+E87038,Elgin Clinic,"40 Elgin Avenue, London, W9 3QT",020 72860747,11892,51.5248028,-0.1985547,5
 E87043,Emperor'S Gate Centre For Health,"First Floor, 49 Emperor'S Gate, London, SW7 4HJ",020 72445670,9479,51.49630483203044,-0.1863242873885336,4
 E87045,Covent Garden Medical Centre,"Covent Garden Medical Ctr, Eric Knapp, 47 Shorts Gardens, London, WC2H 9AA",020 73797209,6350,51.515562026862646,-0.1237143997197047,3
 E87046,The Randolph Surgery,"The Randolph Surgery, 235A Elgin Avenue, London, W9 1NH",020 72662621,14349,51.52985350301782,-0.1868806283900232,5
-E87047,Earls Court Medical Centre,"Earls Court Medical Ctr, 248 Earls Court Road, London, SW5 9AD",020 78351455,12809,51.491771899999996,-0.19262220000000002,5
+E87047,Earls Court Medical Centre,"Earls Court Medical Ctr, 248 Earls Court Road, London, SW5 9AD",020 78351455,12809,51.4917719,-0.1926222,5
 E87048,Rosary Garden Surgery,"45 Rosary Gardens, London, SW7 4NQ",020 73736557,9503,51.4920995948041,-0.1830483255368269,4
 E87052,Crompton Medical Centre,"Crompton Medical Centre, 1 Crompton Street, London, W2 1ND",020 77237789,9860,51.52345612827037,-0.1766387629984817,4
 E87061,The Pembridge Villas Surgery,"The Surgery, 45A Pembridge Villas, Nottinghill Gate, London, W11 3EP",020 77272222,8516,51.51298975331276,-0.1970758793081931,4
@@ -347,7 +347,7 @@ E87609,St Johns Wood Medical Practice,"Brampton House, 60 Grove End Road, London
 E87637,Grand Union Health Centre,"209 Harrow Road, London, W2 5EH",020 72861231,8847,51.52031945000001,-0.1913978000000002,4
 E87648,Mayfair Medical Centre,"Mayfair Medical Centre, 3-5 Weighhouse Street, London, W1K 5LS",020 74931647,9098,51.51349930360096,-0.1501841933005175,4
 E87663,Third Floor Lanark Road Medical Centre,"165 Lanark Road, 3Rd Floor Medical Centre, London, W9 1NZ",020 76248616,3368,51.53041396352208,-0.1857927092500171,1
-E87665,The Chelsea Practice,"The Chelsea Practice, The Violet Melchett Clin., Flood Walk, London, SW3 5RR",0844 4778722,9130,51.487046299999996,-0.1662537,4
+E87665,The Chelsea Practice,"The Chelsea Practice, The Violet Melchett Clin., Flood Walk, London, SW3 5RR",0844 4778722,9130,51.4870463,-0.1662537,4
 E87677,Imperial College Health Centre,"Imperial College Hth Ctr, (Southside,Watts Way), 40 Princes Gardens, London, SW7 1LY",020 75846301,7951,51.498654452028035,-0.1720109520624443,3
 E87681,Newton Medical Centre,"The Newton Medical Centre, 14-18 Newton Road, London, W2 5LT",020 72294578,7707,51.51628115696639,-0.1918293381350269,3
 E87691,Westminster School,"Westminster School, 17 Deans Yard, London, SW1P 3PA",020 75892478,3436,51.498865618179856,-0.1277904177202955,1
@@ -357,7 +357,7 @@ E87702,The Surgery,"7 Kynance Place, Gloucester Road, London, SW7 4QS",020 75813
 E87706,The Foreland Medical Centre,"The Foreland Medical Ctr, 188 Walmer Road, London, W11 4ES",020 77272604,5001,51.51251850948175,-0.2127023450412486,2
 E87711,Royal Hospital Chelsea,"Royal Hospital Chelsea, Royal Hospital Road, London, SW3 4SR",020 78815267,6556,51.48739998652522,-0.1573370745336009,3
 E87714,Soho Square General Practice,"Soho Square General Pract, Ist Floor,1 Frith Street, London, W1D 3HZ",020 34056570,2403,51.51452389036539,-0.1319145130601459,1
-E87715,Scarsdale Medical Centre,"Scarsdale Medical Centre, 2 Scarsdale Place, London, W8 5SX",020 79381887,4029,51.499407299999994,-0.19190020000000002,2
+E87715,Scarsdale Medical Centre,"Scarsdale Medical Centre, 2 Scarsdale Place, London, W8 5SX",020 79381887,4029,51.4994073,-0.1919002,2
 E87720,Kensington Park Medical Centre,"Kensington Park Med/Ctr, 75 Russell Road, London, W14 8HW",020 73716060,5208,51.4973245089126,-0.2087874010172307,2
 E87722,Lancaster Gate Medical Centre,"Lancaster Medical Centre, 20-21 Leinster Terrace, London, W2 3ET",020 74799750,3350,51.511753005674564,-0.1833617483311301,1
 E87733,The Exmoor Surgery,"The Exmoor Surgery, Exmoor Street, London, W10 6DZ",020 89625166,3318,51.522361987071896,-0.217218001276493,1
@@ -421,7 +421,7 @@ F82610,Dr Gupta,"206 Mawney Road, Romford, Essex, RM7 8BU",01708 739379,3820,51.
 F82612,The White House Surgery,"12 Movers Lane, Barking, Essex, IG11 7UN",020 85944042,2053,51.53400429043679,0.0881643963480614,1
 F82619,Harlow Road Surgery,"The Surgery, 1 Harlow Road, Rainham, Essex, RM13 7UP",01708 552072,9593,51.53193513391447,0.1864182317850251,4
 F82621,Dewey Practice (Dr Christopher),"281 Oxlow Lane, Dagenham, Essex, RM10 7YU",020 85920049,5146,51.551483865305656,0.1588378199788089,2
-F82624,Upminster Bridge Surgery,"Upminster Bridge Surgery, 126 Upminster Road, Hornchurch, Essex, RM12 6PL",01708 440642,2453,51.55826550000001,0.23476889999999997,1
+F82624,Upminster Bridge Surgery,"Upminster Bridge Surgery, 126 Upminster Road, Hornchurch, Essex, RM12 6PL",01708 440642,2453,51.55826550000001,0.2347689,1
 F82625,Abbey Medical Centre,"Abbey Medical Centre, 1 Harpour Road, Barking, Essex, IG11 8RJ",020 80908106,3155,51.5422687521537,0.0782135344728247,1
 F82627,Dr Abdullah,"Rainham Health Centre, Upminster Road South, Rainham, Essex, RM13 9AB",01708 796579,2816,51.519362307325935,0.1970449463902807,1
 F82630,Chase Cross Medical Centre,"13-15 Chase Cross Road, Collier Row, Romford, Essex, RM5 3PJ",01708 749918,10268,51.6006999,0.1637112999999999,4
@@ -461,17 +461,17 @@ F83018,Prince Of Wales Group Surgery,"52 Prince Of Wales Road, Camden, London, N
 F83019,Abbey Medical Centre,"Abbey Medical Centre, 85 Abbey Road, London, NW8 0AG",020 76042455,4862,51.53792143102939,-0.1851318182213689,2
 F83020,Adelaide Medical Centre,"Adelaide Medical Centre, 111 Adelaide Road, London, NW3 3RY",020 77224135,10156,51.543523795120834,-0.1611190078363719,4
 F83021,Ritchie Street Group Practice,"Ritchie Street Group Prac, 34 Ritchie Street, London, N1 0DG",020 78371663,24274,51.53471709132776,-0.1078254567337148,5
-F83022,Caversham Group Practice,"4 Peckwater Street, Kentish Town, London, NW5 2UP",020 74285700,8882,51.550379799999995,-0.1374360832343623,4
+F83022,Caversham Group Practice,"4 Peckwater Street, Kentish Town, London, NW5 2UP",020 74285700,8882,51.5503798,-0.1374360832343623,4
 F83023,James Wigg Practice,"Kentish Town Health Ctre, 2 Bartholomew Road, London, NW5 2BX",020 74284555,33175,51.546404132421905,-0.1399548177122691,5
 F83025,The Regents Park Practice,"Regents Park Medical Ctr., Cumberland Market, London, NW1 3RH",020 73884474,6806,51.529329986686896,-0.1418185885482183,3
 F83027,Drs Bowry & Bowry'S Practice,"The Family Practice, 117 Holloway Road, Islington, London, N7 8LT",020 76074322,4354,51.5481698,-0.1072145500000004,2
-F83032,St Peter'S Street Medical Practice,"St.Peter'S St Med Pract, 16 1/2 St.Peter'S Street, Islington, London, N1 8JG",020 72889320,4944,51.5356955,-0.10094489999999999,2
+F83032,St Peter'S Street Medical Practice,"St.Peter'S St Med Pract, 16 1/2 St.Peter'S Street, Islington, London, N1 8JG",020 72889320,4944,51.5356955,-0.1009449,2
 F83033,Barnsbury Medical Practice,"Bingfield Primary Care Cr, 8 Bingfield Street, London, N1 0AL",020 77009700,6976,51.539320874379385,-0.119262100428951,3
 F83034,New North Health Centre,"New North Health Centre, 287-293 New North Road, London, N1 7AA",020 72269090,2668,51.53753411883688,-0.0915921066872676,1
 F83039,The Rise Group Practice,"Hornsey Rise Health Ctr., Hornsey Rise, London, N19 3YU",020 75302484,892,51.571444007628,-0.1250074890680975,1
 F83042,Gray'S Inn Road Medical Centre,"Gray'S Inn Road Med Ctr, 77 Gray'S Inn Road, Holborn, London, WC1X 8TS",020 74059360,3501,51.52273435816775,-0.1145110876820243,1
 F83043,Ridgmount Practice,"Ridgmount Practice, 8 Ridgmount Street, London, WC1E 7AA",020 73876306,3533,51.520465482297524,-0.1311957150026561,1
-F83044,The Bloomsbury Surgery,"The Bloomsbury Surgery, 1 Handel Street, London, WC1N 1PD",020 78378559,7691,51.5256159,-0.12307370000000001,3
+F83044,The Bloomsbury Surgery,"The Bloomsbury Surgery, 1 Handel Street, London, WC1N 1PD",020 78378559,7691,51.5256159,-0.1230737,3
 F83045,The Miller Practice,"The Miller Practice, 49 Highbury New Park, Highbury, London, N5 2ET",020 73541972,12167,51.55141889540217,-0.0921650004855746,5
 F83048,Brunswick Medical Centre Uhpc,"39 Brunswick Centre, London, WC1N 1AF",020 78373057,4969,51.52442971970883,-0.1235476587347091,2
 F83050,Fortune Green Road Surgery,"80 Fortune Green Road, London, NW6 1DS",020 34355602,10637,51.55465368988683,-0.1966262073520886,4
@@ -479,7 +479,7 @@ F83052,Brookfield Park Surgery,"68 Chester Road, London, N19 5BZ",020 72639633,4
 F83053,Mildmay Medical Practice,"Mildmay Medical Practice, 2A Green Lanes, London, N16 9NF",020 79231999,8717,51.55247412380851,-0.0857307803750239,4
 F83055,West Hampstead Medical Centre,"9 Solent Road, London, NW6 1TP",020 74311588,7535,51.55003985167202,-0.1965778868398193,3
 F83056,The Mitchison Road Surgery,"The Surgery, 2 Mitchison Road, London, N1 3NG",020 72266016,9188,51.5450739239712,-0.0878406133326827,4
-F83057,Parliament Hill Surgery,"Parliament Hill Surgery, 113-117 Highgate Road, London, NW5 1TR",020 74829280,24279,51.554862799999995,-0.1452121,5
+F83057,Parliament Hill Surgery,"Parliament Hill Surgery, 113-117 Highgate Road, London, NW5 1TR",020 74829280,24279,51.5548628,-0.1452121,5
 F83058,Holborn Medical Centre,"The Holborn Medical Ctr., 64-66 Lamb'S Conduit St., Holborn, London, WC1N 3NA",020 30770044,5402,51.52225299395237,-0.1185434518376656,2
 F83059,Brondesbury Medical Centre,"Brondesbury Medical Ctr, 279 Kilburn High Road, London, NW6 7JQ",020 76249853,2573,51.5434583954636,-0.2001550432986776,1
 F83060,The Northern Medical Centre,"Northern Medical Centre, 580 Holloway Road, London, N7 6LB",020 38173975,11580,51.560765646950294,-0.1232468128170573,5
@@ -509,13 +509,13 @@ F83683,Somers Town Medical Centre,"Somers Town Medical Ctr., 77-83 Chalton Stree
 F83686,Stroud Green Medical Centre,"181 Stroud Green Road, London, N4 3PZ",020 72724323,6420,51.57005890422384,-0.1143285260532757,3
 F84003,Lower Clapton Group Practice,"Lower Clapton Health Ctr., 36 Lower Clapton Road, Clapton, London, E5 0PQ",020 89867111,8086,51.550990422680655,-0.0510222822029588,3
 F84004,Market Street Health Group,"Market Street Health Grp, 52 Market Street, East Ham, London, E6 2RA",020 85482200,8821,51.53099424682024,0.0574891925891379,4
-F84006,The Shrewsbury Centre,"Shrewsbury Road Hlth Ctr, Shrewsbury Road, Forest Gate, London, E7 8QP",020 85865111,5316,51.539494299999994,0.0439051932938711,2
+F84006,The Shrewsbury Centre,"Shrewsbury Road Hlth Ctr, Shrewsbury Road, Forest Gate, London, E7 8QP",020 85865111,5316,51.5394943,0.0439051932938711,2
 F84008,Barton House Group Practice,"Barton House Health Ctr, 233 Albion Road, Stoke Newington, London, N16 9JT",020 72495511,7790,51.560456959439094,-0.0839240084626122,3
 F84009,Stratford Village Surgery,"Stratford Village Surgery, 50C Romford Road, Stratford, London, E15 4BZ",020 85344133,4958,51.54208678815753,0.0061922794196936,2
 F84010,St. Bartholomews Surgery,"St.Bartholomew'S Surgery, 292A Barking Road, East Ham, London, E6 3BA",020 84720669,4480,51.532481264042595,0.0517642939694641,2
 F84012,Albion Health Centre,"Albion Health Centre, 333 Whitechapel Road, Whitechapel, London, E1 1BU",020 74569820,6358,51.51996206367917,-0.0572594278958556,3
 F84013,Stamford Hill Group Practice,"Stamford Hill Group Pract, 2 Egerton Road, Stamford Hill, London, N16 6UA",020 88001000,4304,51.573975869854536,-0.0714929551848389,2
-F84014,Upton Lane Medical Centre,"Upton Lane Medical Centre, 75-77 Upton Lane, Forest Gate, London, E7 9PB",020 84716912,6494,51.54327262335407,0.025873255890720998,3
+F84014,Upton Lane Medical Centre,"Upton Lane Medical Centre, 75-77 Upton Lane, Forest Gate, London, E7 9PB",020 84716912,6494,51.54327262335407,0.025873255890721,3
 F84015,Kingsmead Healthcare,"Kingsmead Healthcare, 4 Kingsmead Way, London, E9 5QG",020 89851930,5202,51.5516345,-0.034524900000000004,2
 F84016,The Mission Practice,"Mission Medical Practice, 208 Cambridge Heath Road, Bethnal Green, London, E2 9LS",020 89837300,4403,51.5313733024055,-0.0564826915369917,2
 F84017,Star Lane Medical Centre,"Star Lane Medical Centre, 121 Star Lane, Canning Town, London, E16 4QH",020 74764862,1032,51.51987281095389,0.0106742030075555,1
@@ -535,7 +535,7 @@ F84041,Southgate Road Medical Centre,"Southgate Rd Medical Ctr, 101-103 Southgat
 F84044,Harley Grove Medical Ctr.,"Harley Grove Medical Ctr., 15 Harley Grove, London, E3 2AT",020 89837479,7704,51.528522339656284,-0.0288606926074865,3
 F84046,Brayford Square Surgery,"5 Brayford Square, Stepney, London, E1 0SG",0844 4773106,5805,51.514467056570815,-0.0505448860238041,2
 F84047,Custom House Surgery,"Custom House Surgery, 16 Freemasons Road, Custom House, Canning Town,London, E16 3NA",020 74762255,5579,51.51124935523545,0.0260500177898586,2
-F84050,Boleyn Medical Centre,"Boleyn Medical Centre, 152 Barking Road, East Ham, London, E6 3BD",020 84758500,6717,51.531361499999996,0.0452445,3
+F84050,Boleyn Medical Centre,"Boleyn Medical Centre, 152 Barking Road, East Ham, London, E6 3BD",020 84758500,6717,51.5313615,0.0452445,3
 F84051,Strouts Place Medical Centre,"Med Ctr, 3 Strouts Place, Pelter Street, London, E2 7QU",020 77398859,6202,51.529479540891174,-0.0741524587965519,3
 F84052,Essex Lodge,"Essex Lodge, 94 Greengate Street, Plaistow, London, E13 0AS",020 84724888,6211,51.52862937398693,0.0259828577018601,3
 F84053,Greengate Medical Centre,"Greengate Medical Centre, 497 Barking Road, Plaistow, London, E13 8PS",020 84717160,6463,51.52537850668325,0.0280816780041045,3
@@ -551,7 +551,7 @@ F84074,The Graham Practice,"The Graham Practice, Wordsworth Health Centre, 19 Wo
 F84077,Dr Samuel And Dr Khan,"Vicarage Lane Health Ctr, 10 Vicarage Lane, Stratford, London, E15 4ES",020 85362266,5849,51.54149158579622,0.0100073793257139,2
 F84079,The Wapping Group Practice,"The Wapping Health Centre, 22 Wapping Lane, London, E1W 2RL",020 74819376,5189,51.50532762914622,-0.0582212644764312,2
 F84080,Fountayne Road Health Centre,"Fountayne Road Health Ctr, 1A Fountayne Road, London, N16 7EA",020 39280777,2026,51.56442023163135,-0.0651448332809361,1
-F84081,The Spitalfields Practice,"The Spitalfields Practice, 20 Old Montague Street, London, E1 5PB",020 72477070,3742,51.517397700000004,-0.06962360000000001,1
+F84081,The Spitalfields Practice,"The Spitalfields Practice, 20 Old Montague Street, London, E1 5PB",020 72477070,3742,51.5173977,-0.06962360000000001,1
 F84083,Bethnal Green Health Ctr.,"Bethnal Green Health Ctr., 60 Florida Street, Bethnal Green, London, E2 6LL",020 77396677,2690,51.526915618105534,-0.0642556078714373,1
 F84086,The Forest Practice,"Lord Lister Health Centre, 121 Woodgrange Road, Forest Gate, London, E7 0EP",020 82507510,2851,51.55097109567222,0.0248317317533722,1
 F84087,Harford Health Centre,"Harford Health Centre, 115 Harford Street, London, E1 4FG",020 77901059,1981,51.51834958756532,-0.0383079805644612,1
@@ -575,7 +575,7 @@ F84601,Elsdale Street Surgery,"Elsdale Street Surgery, 28 Elsdale Street, Hackne
 F84619,The Riverside Practice,"Theydon Road Health Ctr, 14 Urban Hive, Theydon Rd, London, E5 9BQ",020 88061928,4309,51.5640199,-0.0520270999999999,2
 F84620,The Wick Health Centre,"Kenworthy Road Health Ctr, 10 Kenworthy Road, London, E9 5TD",020 89866341,4220,51.54751866568999,-0.037960816404356,2
 F84621,Sandringham Practice,"The Medical Centre, 1A Madinah Road, Hackney, London, E8 1PG",020 72750022,4418,51.54804565,-0.06686215,2
-F84632,The Greenhouse Walk-In,"19 Tudor Road, Hackney, London, E9 7SN",020 85104490,6349,51.538523299999994,-0.0552018,3
+F84632,The Greenhouse Walk-In,"19 Tudor Road, Hackney, London, E9 7SN",020 85104490,6349,51.5385233,-0.0552018,3
 F84635,Shoreditch Park Surgery,"Shoreditch Park Surgery, 10 Rushton Street, London, N1 5DR",020 77398525,9197,51.53346315,-0.0868766999999999,4
 F84636,The Surgery (Barretts Grove),"6 Barretts Grove, Stoke Newington, London, N16 8AR",020 72541661,11524,51.55219952531535,-0.0782848617594326,5
 F84640,The Neaman Practice,"The Neaman Practice, 15 Half Moon Court, London, EC1A 7HF",020 76009740,7636,51.518982241822,-0.0982197825108778,3
@@ -606,7 +606,7 @@ F84710,Island Health,"Island Health, 145 East Ferry Road, Isle Of Dogs, London, 
 F84711,Rosewood Practice,"Rosewood Practice, 1A Fountayne Road, London, N16 7EA",020 76834847,5797,51.56442023163135,-0.0651448332809361,2
 F84714,St. Paul'S Way Medical Ctr,"First Floor, 11 Selsey Street, London, E14 7LJ",020 75380833,2917,51.51786237985586,-0.0244829938080497,1
 F84716,The Allerton Road Surgery,"34A Allerton Road, Stoke Newington, London, N16 5UF",020 88022882,3547,51.56572395449951,-0.0903830888981056,1
-F84717,Royal Docks Medical Practice,"Royal Docks Medical Ctre, 21 East Ham Manor Way, Beckton, London, E6 5NA",020 75114466,3185,51.51006293644925,0.062089971772464995,1
+F84717,Royal Docks Medical Practice,"Royal Docks Medical Ctre, 21 East Ham Manor Way, Beckton, London, E6 5NA",020 75114466,3185,51.51006293644925,0.062089971772465,1
 F84718,The Blithehale Med.Ctr.,"Blithehale Health Centre, 10-22 Dunbridge Street, London, E2 6JA",020 77395497,6426,51.523774739951975,-0.0651960815971299,3
 F84719,Latimer Health Centre,"Latimer Health Centre, 4 Homerton Terrace, Off Morning Lane,Hackney, London, E9 6RT",020 89852249,8049,51.546589792450845,-0.0495027301877923,3
 F84720,Healy Medical Centre,"Healy Medical Centre, 200 Upper Clapton Road, London, E5 9DH",020 88061550,17263,51.56638834920216,-0.0597917428103416,5
@@ -615,7 +615,7 @@ F84729,The Manor Park Practice,"The Surgery, 778 Romford Road, Manor Park, Londo
 F84730,Dr Pcl Knight,"Vicarage Lane Health Ctr, 10 Vicarage Lane, Stratford, London, E15 4ES",020 85362244,12104,51.54149158579622,0.0100073793257139,5
 F84731,St. Katherine'S Dock Practice,"12-14 Nightingale House, 50 Thomas More Street, London, E1W 1UA",020 74883653,7461,51.5071804,-0.0682198,3
 F84733,Health E1,"9 - 11 Brick Lane, London, E1 6PU",020 72470090,8267,51.51837165451547,-0.0715380187087058,3
-F84735,The Azad Practice,"Boleyn Medical Centre, 152 Barking Road, East Ham, London, E6 3BD",020 84758550,3529,51.531361499999996,0.0452445,1
+F84735,The Azad Practice,"Boleyn Medical Centre, 152 Barking Road, East Ham, London, E6 3BD",020 84758550,3529,51.5313615,0.0452445,1
 F84739,E12 Medical Centre,"243 High Street North, Manor Park, London, E12 6SJ",020 84702500,2529,51.54039932290733,0.0504164359063199,1
 F84740,Newham Transitional Practice,"Newham Transitional Prac, 30 Church Road,The Centre, Manor Park, London, E12 6AQ",020 85537460,7889,51.54778475419264,0.0538331184707544,3
 F84741,Dr T Krishnamurthy,"East Ham Memorial Hpl, Shrewsbury Road, Forest Gate, London, E7 8QR",020 85866555,6906,51.53958758364311,0.0453595730479787,3
@@ -640,17 +640,17 @@ F85028,Bruce Grove Primary Health Care Ctr,"The Surgery, 461-463 High Road, Tott
 F85029,Abernethy House Surgery,"Abernethy House Surgery, 70 Silver Street, Enfield, Middlesex, EN1 3EB",020 83704940,3366,51.65454325,-0.081131525,1
 F85030,Somerset Gardens Family Health Centre,"Somerset Gdns Fam Hth Ctr, 4 Creighton Road, Tottenham, London, N17 8NW",020 82756410,2945,51.60533816802093,-0.0734713414326079,1
 F85031,Westbury Medical Centre,"The Surgery, 205 Westbury Avenue, Wood Green, London, N22 6RX",020 88883021,4488,51.5980098,-0.0934014,2
-F85032,Southgate,"The Surgery, 270 Chase Side, Southgate, London, N14 4PR",020 84409301,2625,51.640302500000004,-0.14265970000000006,1
+F85032,Southgate,"The Surgery, 270 Chase Side, Southgate, London, N14 4PR",020 84409301,2625,51.6403025,-0.14265970000000006,1
 F85033,Winchmore Hill Practice,"808 Green Lanes, Winchmore Hill, London, N21 2SA",020 83505000,3409,51.6332477,-0.0937945,1
 F85034,Arcadian Gardens Surgery,"1 Arcadian Gardens, Wood Green, London, N22 5AB",020 88884142,5062,51.60672683324012,-0.1107733097541682,2
 F85035,Highlands Practice,"Highlands Health Centre, 3 Florey Square, Winchmore Hill, London, N21 1UJ",020 83609044,5468,51.646336919070905,-0.1106881513318848,2
-F85039,Rainbow Practice,"Evergreen Primary Cre Ctr, 1 Smythe Close, Edmonton, N9 0TW",020 88878329,3390,51.6237762,-0.060311199999999995,1
-F85043,Boundary Court Surgery,"The Surg, Evergreen Pcc, 1 Smythe Close, Edmonton, London, N9 0TW",020 88879938,13720,51.6237762,-0.060311199999999995,5
+F85039,Rainbow Practice,"Evergreen Primary Cre Ctr, 1 Smythe Close, Edmonton, N9 0TW",020 88878329,3390,51.6237762,-0.0603112,1
+F85043,Boundary Court Surgery,"The Surg, Evergreen Pcc, 1 Smythe Close, Edmonton, London, N9 0TW",020 88879938,13720,51.6237762,-0.0603112,5
 F85044,The Bounces Road Surgery,"Forest Primary Care Ctr, 308A Hertford Road, Edmonton, London, N9 7HD",020 83448077,6477,51.633471510280685,-0.0529555842040717,3
 F85046,Hornsey Park Surgery,"The Surgery, 114 Turnpike Lane, Hornsey, N8 0PH",020 88882227,2207,51.58927467662926,-0.1092309576410669,1
 F85052,Spur Road Surgery,"The Surgery, 1 Spur Road, Tottenham, London, N15 4AA",020 88009837,3823,51.586597165977295,-0.0866209116995061,1
 F85058,Nightingale House Surgery,"Nightingale House Surgery, 1 Nightingale Road, Edmonton, London, N9 8AJ",020 88059997,3435,51.632957960056935,-0.0459877070284227,1
-F85060,Havergal Surgery,"Havergal Surgery, 9-10 Havergal Villas, Green Lanes, Tottenham, N15 3DY",020 88886662,12107,51.589194189280214,-0.10201622983037101,5
+F85060,Havergal Surgery,"Havergal Surgery, 9-10 Havergal Villas, Green Lanes, Tottenham, N15 3DY",020 88886662,12107,51.589194189280214,-0.102016229830371,5
 F85061,Christchurch Hall Surgery,"Christchurch Hall Surgery, 20 Edison Road, London, N8 8AE",020 83402877,9444,51.577920991293276,-0.1257223381958608,4
 F85063,The Muswell Hill Practice,"The Muswell Hill Practice, 1 Dukes Avenue, Muswell Hill, London, N10 2PS",020 83653303,6821,51.591790918215295,-0.1416494078439502,3
 F85064,Stuart Crescent Health Centre,"8 Stuart Crescent, Wood Green, London, N22 5NJ",020 88891115,8160,51.600623854374895,-0.1098505637485822,3
@@ -675,7 +675,7 @@ F85669,West Green Road Surgery,"339-341 West Green Road, Tottenham, London, N15 
 F85675,The Alexandra Surgery,"The Alexandra Surgery, 125 Alexandra Park Road, Wood Green, London, N22 7UN",020 88882518,4216,51.59914451031813,-0.1371075550171683,2
 F85676,Boundary House Surgery,"Forest Primary Care Ctr, 308A Hertford Road, Edmonton, London, N9 7HD",020 83443120,4861,51.633471510280685,-0.0529555842040717,2
 F85678,Town Surgery,"The Surgery, 37 Cecil Road, Enfield, Middlesex, EN2 6TJ",020 30921662,2234,51.650217385646656,-0.0838779747858049,1
-F85682,Chalfont Road Surgery,"Evergreen Primary C.C., 1St Floor 1 Smythe Close, Edmonton, London, N9 0TW",020 88074505,3170,51.6237762,-0.060311199999999995,1
+F85682,Chalfont Road Surgery,"Evergreen Primary C.C., 1St Floor 1 Smythe Close, Edmonton, London, N9 0TW",020 88074505,3170,51.6237762,-0.0603112,1
 F85687,Oakwood Medical Centre,"Oakwood Medical Centre, Malcolms Way,Reservoir Rd, Southgate, London, N14 4AQ",020 88861115,2204,51.646534141870305,-0.1342694126608671,1
 F85688,Rutland House Surgery,"Rutland House Surgery, 40 Colney Hatch Lane, Muswell Hill, London, N10 1DU",020 88838214,3831,51.5951849,-0.1445254,1
 F85697,The Old Surgery,"572 Green Lanes, Hornsey, London, N8 0RP",020 88026250,4203,51.5836291,-0.09972855,2
@@ -695,7 +695,7 @@ F86012,Rydal,"Rydal, 375 High Road, Woodford Green, Essex, IG8 9QJ",020 85040532
 F86013,The Broadway Surgery,"The Broadway Surgery, 3 Broadway Gardens, Monkhams Avenue, Woodford Green, IG8 0HF",020 85053204,8622,51.60855452258225,0.0333223250494315,4
 F86018,The Ecclesbourne Practice,"Ecclesbourne, 1 Warwick Terrace, Lea Bridge Road, Leyton, London, E17 9DP",020 85392077,13814,51.58075998311579,-0.0010685761994944,5
 F86020,Glebelands Practice,"2 Glebelands Avenue, South Woodford, London, E18 2AB",020 89896272,3676,51.592491624509144,0.0249455833407598,1
-F86022,Ilford Medical Centre,"Ilford Medical Centre, 61 Cleveland Road, Ilford, Essex, IG1 1EE",020 85147761,9179,51.556385299999995,0.0730636,4
+F86022,Ilford Medical Centre,"Ilford Medical Centre, 61 Cleveland Road, Ilford, Essex, IG1 1EE",020 85147761,9179,51.5563853,0.0730636,4
 F86023,The Evergreen Surgery,"The Evergreen Surgery, 26 High Street, Wanstead, London, E11 2AQ",020 85188746,15338,51.578041361445464,0.0255951493175606,5
 F86025,Oak Tree Medical Centre,"Oak Tree Medical Centre, 273-275 Green Lane, Seven Kings, Ilford, Essex, IG3 9TJ",020 85993977,5376,51.56068920000001,0.0963437,2
 F86026,The Forest Surgery,"Forest Surgery, 2 Macdonald Road, Walthamstow, London, E17 4BA",020 84984988,12733,51.59472577864965,-0.0050366346990404,5
@@ -707,7 +707,7 @@ F86036,The Allum Medical Centre,"The Allum Medical Centre, Fairlop Road, Leytons
 F86038,Sma Medical Practice,"Sma Medical Practice, 693-695 High Road, Leyton, London, E10 6RA",020 85392078,33,51.57125585,-0.0087394,1
 F86040,Dr A Arif,"620 Longbridge Road, Goodmayes, Dagenham, Essex, RM8 2AJ",020 36687497,5351,51.551394932271975,0.1153432933119844,2
 F86042,Balfour Road Surgery,"92 Balfour Road, Ilford, Essex, IG1 4JE",020 84780209,157,51.56304334617778,0.0759176382993195,1
-F86044,Crawley Road Medical Centre,"Crawley Road Medical Ctr., 479 High Road, Leyton, London, E10 5EL",020 85391880,8244,51.562937299999994,-0.0109734,3
+F86044,Crawley Road Medical Centre,"Crawley Road Medical Ctr., 479 High Road, Leyton, London, E10 5EL",020 85391880,8244,51.5629373,-0.0109734,3
 F86045,High Road Surgery,"287 High Road, Leytonstone, London, E11 4HH",020 85328460,14836,51.55350249326882,0.0050753931576524,5
 F86057,The Willows Practice,"The Willows Practice, Hainault Health Centre, Manford Way, Chigwell, Essex, IG7 4DF",020 85015051,3299,51.60786171785179,0.1043478301309362,1
 F86058,St James Medical Practice Limited,"St James Health Centre, 47 St James Street, Walthamstow, London, E17 7NH",020 32330870,5422,51.580380139329726,-0.0320494540293513,2
@@ -732,7 +732,7 @@ F86624,The Heathcote Primary Care Centre,"Heathcote Avenue, Clayhall, Ilford, Es
 F86625,Ll Medical Care Ltd,"Langthorne Health Centre, 13 Langthorne Road, Leytonstone, London, E11 4HX",020 85392858,11177,51.5554417,0.0021076,4
 F86626,Dr Shantir Practice,"Forest Road Medical Ctre, 354-358 Forest Road, Walthamstow, London, E17 5JL",020 85207115,10592,51.5896966764608,-0.0261754256463416,4
 F86627,Churchill Medical Centre,"Churchill Medical Centre, 1 Churchill Terrace, Chingford, London, E4 8DG",020 84307020,8170,51.61829093003952,-0.0183748169294451,3
-F86637,Seven Kings Practice,"Seven Kings Health Centre, 1 Salisbury Road, Seven Kings, Ilford, Essex, IG3 8BG",020 85901320,11345,51.56346283850383,0.09682901641716199,4
+F86637,Seven Kings Practice,"Seven Kings Health Centre, 1 Salisbury Road, Seven Kings, Ilford, Essex, IG3 8BG",020 85901320,11345,51.56346283850383,0.096829016417162,4
 F86638,The Microfaculty,"107-109 Chingford Mount, Road, Chingford, London, E4 8LT",020 85241230,3047,51.61180929982786,-0.0182353613839633,1
 F86641,The Shrubberies Medical Centre,"The Shrubberies Med Ctr, 12 The Shrubberies, South Woodford, London, E18 1BD",020 85304108,2648,51.59471575,0.02440075,1
 F86642,Castleton Road Health Centre,"19 Castleton Road, Goodmayes, Ilford, Essex, IG3 9QW",020 85999951,3465,51.56393466618597,0.1126355600111997,1
@@ -757,12 +757,12 @@ F86705,Langthorne Sharma Family Practice,"Langthorne Health Centre, 13 Langthorn
 F86707,Fence Piece Road Medical Centre,"83 Fencepiece Road, Hainault, Ilford, Essex, IG6 2NB",020 85003526,9020,51.60024984771646,0.0843564432703343,4
 F86708,Claremont Medical Centre,"Claremont Medical Centre, 29-31 Claremont Road, Walthamstow, London, E17 5RJ",020 85271888,7960,51.59435712023639,-0.0338131747198758,3
 F86712,Hampton Medical Centre,"Hampton Medical Centre, 1 Pretoria Road, Leytonstone, London, E11 4BB",020 85393232,4151,51.56644901276257,-4.131367494560497e-05,2
-F86731,Aldersbrook Medical Centre,"65 Aldersbrook Road, Manor Park, London, E12 5DL",020 85188080,6060,51.561087799999996,0.0374463,3
+F86731,Aldersbrook Medical Centre,"65 Aldersbrook Road, Manor Park, London, E12 5DL",020 85188080,6060,51.5610878,0.0374463,3
 G83001,Manor Brook Pms,"Manor Brook Medical Ctr., 117 Brook Lane, Blackheath, London, SE3 0EN",020 88569720,6904,51.46917330062456,0.0250518485143552,3
 G83002,The Westwood Surgery,"The Westwood Surgery, 24 Westwood Lane, Welling, Kent, DA16 2HE",020 83035353,8780,51.46317581792857,0.0972960580058055,4
 G83004,Barnard Medical Group,"Barnard Medical Practice, 43 Granville Road, Sidcup, Kent, DA14 4TA",020 83027721,12541,51.427919590309905,0.1055496616839776,5
 G83006,The Albion Surgery,"The Albion Surgery, 6 Pincott Road, Bexleyheath, Kent, DA6 7LP",020 83048334,7663,51.45404888461554,0.1474146054426103,3
-G83009,Bellegrove Surgery,"174 Bellegrove Road, Welling, Kent, DA16 3RE",020 88561770,4371,51.464560669978674,0.09579027071108699,2
+G83009,Bellegrove Surgery,"174 Bellegrove Road, Welling, Kent, DA16 3RE",020 88561770,4371,51.464560669978674,0.095790270711087,2
 G83010,Northumberland Heath Med.Ctr.,"Northumberland Heath, Med.Ctr., Hind Crescent, Northumberland Heath, Erith, Kent, DA8 3DB",01322 336556,12968,51.476926702974396,0.1660008742682476,5
 G83012,Gallions Reach Health Centre,"Thamesmead Med Associates, Gallions Reach Health Ctr, Bentham Road, Thamesmead, SE28 8BE",020 83335000,5528,51.505664550177634,0.1094634337451829,2
 G83013,Blackheath Standard Pms,"Blackheath Surgery, 11-13 Charlton Road, Blackheath, London, SE3 7HB",020 82692040,17859,51.47813372986018,0.0197973219544452,5
@@ -817,9 +817,9 @@ G84007,Poverest Medical Centre,"Poverest Medical Centre, 42 Poverest Road, St Ma
 G84008,Manor Road Surgery,"The Surgery, 14 Manor Road, Beckenham, Kent, BR3 5LE",020 86500957,11138,51.40714736136264,-0.0225436623329202,4
 G84009,Family Surgery,"The Family Surgery, 7 High Street, Green Street Green, Orpington, Kent, BR6 6BG",01689 850231,12774,51.3543658807732,0.0899957963697847,5
 G84010,Chislehurst Medical Practice,"The Chislehurst Med Pract, 42 High Street, Chislehurst, Kent, BR7 5AQ",020 82952464,10029,51.419677465973976,0.0669120425317294,4
-G84011,Eden Park Surgery,"Eden Park Surgery, 194 Croydon Road, Beckenham, Kent, BR3 4DQ",020 86501274,11281,51.3992096,-0.041165600000000004,4
+G84011,Eden Park Surgery,"Eden Park Surgery, 194 Croydon Road, Beckenham, Kent, BR3 4DQ",020 86501274,11281,51.3992096,-0.0411656,4
 G84013,St Mary Cray Practice,"322 High Street, St.Mary Cray, Orpington, Kent, BR5 4AR",01689 820523,12084,51.38657997426445,0.1137919913831628,5
-G84015,Station Road Surgery,"74 Station Road, West Wickham, Kent, BR4 0PU",020 87778245,9500,51.376425899999994,-0.014886199999999999,4
+G84015,Station Road Surgery,"74 Station Road, West Wickham, Kent, BR4 0PU",020 87778245,9500,51.3764259,-0.0148862,4
 G84016,London Lane Clinic,"The London Lane Clinic, Kinnaird House, 37-39 London Lane, Bromley, Kent, BR1 4HB",020 84602661,11237,51.41522288537934,0.0086529597546082,4
 G84017,Addington Road Surgery,"Addington Road Surgery, 77 Addington Road, West Wickham, Kent, BR4 9BG",020 84625771,8590,51.36908051361253,-0.0039699001976343,4
 G84018,Cornerways Surgery,"Cornerways Surgery, 50 Manor Road, Beckenham, Kent, BR3 5LG",020 86502444,7907,51.40704588276694,-0.0202618078037385,3
@@ -858,7 +858,7 @@ G85011,Clapham Family Practice,"Mary Seacole Centre, 89 Clapham High Street, Cla
 G85013,Dr Rs Durston'S Practice,"Camberwell Green Surgery, 17 Camberwell Green, London, SE5 7AF",020 77033788,4227,51.47445776666667,-0.0927914333333333,2
 G85014,Streatham Common Group Practice,"Streatham Common Grp Prac, St.Andrew'S Hall, Guildersfield Road, Streatham, London, SW16 5LS",020 30495470,2,51.4164036405131,-0.1283959031082334,1
 G85015,The Qrp Surgery,"The Queens Road P/Ship, 387 Queens Road, New Cross Gate, London, SE14 5HD",020 76352170,10759,51.47429045,-0.04696725,4
-G85016,Herne Hill Group Practice,"Herne Hill Group Practice, 74 Herne Hill, East Brixton, London, SE24 9QP",020 72743314,2353,51.455609700000004,-0.0992508,1
+G85016,Herne Hill Group Practice,"Herne Hill Group Practice, 74 Herne Hill, East Brixton, London, SE24 9QP",020 72743314,2353,51.4556097,-0.0992508,1
 G85019,Trafalgar Surgery,"Trafalgar Surgery, 10 Trafalgar Avenue, London, SE15 6NR",020 77039271,3123,51.485671936864904,-0.0744144607190541,1
 G85020,Kingfisher Medical Centre,"Kingfisher Medical Centre, Staunton Street, Deptford, London, SE8 5DA",020 86927373,3234,51.48187610596034,-0.0305033110341662,1
 G85021,Prentis Medical Centre,"The Surgery, 2 Prentis Road, Streatham, London, SW16 1XU",0844 4773313,3409,51.43048692619021,-0.130136580406686,1
@@ -872,7 +872,7 @@ G85028,Stockwell Group Practice,"Stockwell Group Practice, 107 Stockwell Road, L
 G85029,Falmouth Road Group Practice,"Falmouth Road Group Pract, 78 Falmouth Road, Borough, London, SE1 4JW",020 74074101,2666,51.496427049451704,-0.0931223072017416,1
 G85030,Parkside Medical Centre,"Parkside Medical Centre, 52 Camberwell Green, London, SE5 7AQ",020 77030596,3462,51.47582619150315,-0.0926423486267359,1
 G85031,Dmc Chadwick Road,"Dmc Chadwick Road, 60 Chadwick Road, London, SE15 4PU",020 76399622,10189,51.46786393999507,-0.0742572405003687,4
-G85032,Torridon Road Medical Practice,"Torridon Rd Med Practice, 80 Torridon Road, London, SE6 1RB",020 86985281,8238,51.440110094598026,-0.0021120288444829998,3
+G85032,Torridon Road Medical Practice,"Torridon Rd Med Practice, 80 Torridon Road, London, SE6 1RB",020 86985281,8238,51.440110094598026,-0.002112028844483,3
 G85034,Nexus Health Group,"Princess Street GP Pract., 2 Princess Street, Elephant And Castle, London, SE1 6JP",020 79280253,18754,51.495617185234956,-0.1019585090378742,5
 G85035,Morden Hill Surgery,"Morden Hill Surgery, 21-23 Morden Hill, Lewisham, London, SE13 7NN",020 84692880,10459,51.4691586,-0.013147,4
 G85038,St Johns Medical Centre,"St Johns Medical Centre, 56-60 Loampit Hill, Lewisham, London, SE13 7SX",020 86921354,13621,51.4672864,-0.0221389499999999,5
@@ -908,7 +908,7 @@ G85105,Vesta Road Surgery,"Vesta Road Surgery, 58 Vesta Road, London, SE4 2NH",0
 G85109,Clapham Park Group Practice,"Clapham Park Grp Practice, 72 Clarence Avenue, London, SW4 8JP",020 86785420,12845,51.45190761140197,-0.1352344593063364,5
 G85114,Wells Park Practice,"Wells Park Practice, 1 Wells Park Road, Sydenham, London, SE26 6JQ",020 86992840,9934,51.43050813606914,-0.0633269010657624,4
 G85119,Sternhall Lane Surgery,"Sternhall Lane Surgery, 12 Sternhall Lane, Peckham, London, SE15 4NT",020 76393553,14933,51.46677149390579,-0.0674356255891307,5
-G85120,Triangle Group Practice,"Triangle Group Practice, 2 Morley Road, East Lewisham, London, SE13 6DQ",020 83187272,8633,51.457946899999996,-0.0116534,4
+G85120,Triangle Group Practice,"Triangle Group Practice, 2 Morley Road, East Lewisham, London, SE13 6DQ",020 83187272,8633,51.4579469,-0.0116534,4
 G85121,Parkview Surgery,"Parkview Surgery, 186 Brownhill Road, Catford, London, SE6 1AT",020 86986566,5997,51.444864016390646,-0.0077327849302437,3
 G85123,Binfield Road Surgery,"Binfield Road Surgery, 1 Binfield Road, Kennington, London, SW4 6TB",020 76221424,10616,51.474463,-0.1254355,4
 G85124,Bellingham Green Surgery,"The Bellingham Green Surg, 24 Bellingham Green, Catford, London, SE6 3JB",020 86977285,13477,51.4304987,-0.0240287,5
@@ -924,7 +924,7 @@ G85137,Brockwell Park Surgery,"Brockwell Park Surgery, 117 Norwood Road, Norwood
 G85138,Albion Street Group Practice,"The Albion Street Hth Ctr, 87 Albion Street, Rotherhithe, London, SE16 7JX",020 30497120,7932,51.50100727879833,-0.0506427623261968,3
 G85623,Bermondsey Spa Medical Centre,"Eyot House, 50 Old Jamaica Road, London, SE16 4BL",020 34746000,2588,51.49700605489632,-0.0691536742573191,1
 G85632,The Villa Street Medical Centre,"The Villa Street Med Ctr, 47 Villa Street, London, SE17 2EL",020 77037393,9871,51.48657239999999,-0.08825210000000001,4
-G85633,Novum Health Partnership,"The Primary Care Centre, Hawstead Road, Lewisham, London, SE6 4JH",020 71387150,5604,51.4495854,-0.018182499999999997,2
+G85633,Novum Health Partnership,"The Primary Care Centre, Hawstead Road, Lewisham, London, SE6 4JH",020 71387150,5604,51.4495854,-0.0181825,2
 G85642,Blackfriars Medical Practice,"Blackfriars Medical Pract, 45 Colombo Street, London, SE1 8EE",020 79286216,9428,51.505363894326436,-0.1057755287748906,4
 G85644,The Gardens Surgery,"The Surgery, The Gardens, London, SE22 9QU",020 86934715,3559,51.4606231906106,-0.0669165705108296,1
 G85647,The Exchange Surgery,"The Exchange Surgery, 2-8 Gracefield Gardens, Streatham, London, SW16 2ST",020 30494888,4621,51.43257014038855,-0.1278673350850325,2
@@ -939,7 +939,7 @@ G85695,Akerman Medical Practice,"Akerman Health Centre, 60 Patmos Road, London, 
 G85696,Vale Medical Centre,"The Vale Medical Centre, 195-197 Perry Vale, Forest Hill, London, SE23 2JF",020 82917007,6791,51.43546908048258,-0.0436505392723855,3
 G85698,Amersham Vale Training Practice,"Suite 5 Waldron Hlth Ctr, Amersham Vale, New Cross, London, SE14 6LD",020 30493600,8634,51.47671793265806,-0.0317017005661363,4
 G85705,The New Mill Street Surgery,"New Mill Street Surgery, 1 Wolseley Street, London, SE1 2BP",020 72521817,35115,51.50070779330196,-0.0711440406056817,5
-G85706,The Old Dairy Health Centre,"The Old Dairy Health Ctr, 19B Croxted Road, West Dulwich, London, SE21 8SZ",020 87618070,11078,51.436181,-0.09072310000000001,4
+G85706,The Old Dairy Health Centre,"The Old Dairy Health Ctr, 19B Croxted Road, West Dulwich, London, SE21 8SZ",020 87618070,11078,51.436181,-0.0907231,4
 G85708,Dr Curran & Partners,"Clapham Manor Health Ctr., 86 Clapham Manor Street, Clapham, London, SW4 6EB",020 74116866,11258,51.465148416964595,-0.1360336315587164,4
 G85711,Deptford Surgery,"Deptford Surgery, 502-504 New Cross Road, Deptford, London, SE14 6TJ",020 86941331,14995,51.474912694999894,-0.027273170468731,5
 G85715,The Lister Practice,"101 Peckham Road,  London, SE15 5LJ",020 34745570,6117,51.47443583882089,-0.0752476685464075,3
@@ -956,15 +956,15 @@ H83005,Upper Norwood Group Practice,"Chaucer House, 130 Church Road, Upper Norwo
 H83006,New Addington Group Practice,"Parkway Health Centre, Parkway, New Addington, Croydon, Surrey, CR0 0JA",01689 808810,4294,51.34339470000001,-0.018263400000000003,2
 H83007,Violet Lane Medical Practice,"Violet Lane Med/Practice, 231 Violet Lane, Croydon, Surrey, CR0 4HN",020 86880333,21642,51.360365806349286,-0.1079715770033417,5
 H83008,The Addiscombe Surgery,"395A Addiscombe Road, Croydon, Surrey, CR0 7LJ",020 86542200,3824,51.3764716,-0.0603943,1
-H83009,Norbury Health Centre (02),"Norbury Health Centre, 2B Pollards Hill North, Norbury, London, SW16 4NL",020 86796591,7362,51.40450538291086,-0.12271363197087301,3
+H83009,Norbury Health Centre (02),"Norbury Health Centre, 2B Pollards Hill North, Norbury, London, SW16 4NL",020 86796591,7362,51.40450538291086,-0.122713631970873,3
 H83010,South Norwood Hill Medical Centre,"South Norwood Hill Med/Ct, 103A South Norwood Hill, London, SE25 6BY",020 87710742,2944,51.403169491997254,-0.0807717942361478,1
 H83011,North Croydon Medical Centre,"North Croydon Medical Ctr, 518 London Road, Thornton Heath, Surrey, CR7 7HQ",0844 4773485,2012,51.387925872710106,-0.1110554701462526,1
 H83012,St. James'S Medical Centre,"St.James'S Medical Centre, 189A St.James'S Road, Croydon, Surrey, CR0 2BZ",020 86845353,4011,51.38177661250001,-0.0929878874999999,2
 H83013,Old Coulsdon Medical Practice,"Old Coulsdon Med Practice, 2A Court Avenue, Old Coulsdon, Surrey, CR5 1HF",01737 558288,3155,51.30677984,-0.11838348,1
 H83014,Queenhill Medical Practice,"Queenhill Medical Prac, 31 Queenhill Road,Selsdon, South Croydon, Surrey, CR2 8DU",020 86511141,30013,51.344990173483716,-0.0667907543705364,5
-H83015,Parkside Group Practice,"Parkside Group Practice, 27 Wyche Grove, South Croydon, Surrey, CR2 6EX",020 86802588,9784,51.350700700000004,-0.0979964,4
+H83015,Parkside Group Practice,"Parkside Group Practice, 27 Wyche Grove, South Croydon, Surrey, CR2 6EX",020 86802588,9784,51.3507007,-0.0979964,4
 H83016,Keston Medical Practice,"Purley War Memorial Hosp, 856 Brighton Road, Purley, Surrey, CR8 2YL",020 86608292,16389,51.340451613757104,-0.1146478495952515,5
-H83017,Brigstock & South Norwood Partnership,"141 Brigstock Road, Thornton Heath, Surrey, CR7 7JN",020 86840033,9123,51.395136444952726,-0.10882621487765301,4
+H83017,Brigstock & South Norwood Partnership,"141 Brigstock Road, Thornton Heath, Surrey, CR7 7JN",020 86840033,9123,51.395136444952726,-0.108826214877653,4
 H83018,Selsdon Park Medical Practice,"Selsdon Park Med.Practice, 97 Addington Rd, Selsdon, South Croydon, Surrey, CR2 8LG",020 86570067,7346,51.34240858227742,-0.064573311739737,3
 H83019,Friends Road Medical Practice,"Friends Road Med/Pract, 49 Friends Road, Croydon, Surrey, CR0 1ED",020 86880532,8339,51.37112439999999,-0.0947884,4
 H83020,Eversley Medical Centre,"Eversley Medical Centre, 501 London Road, Thornton Heath, Surrey, CR7 6AR",020 86841172,4301,51.38851369962178,-0.1119130716256086,2
@@ -986,11 +986,11 @@ H83043,Shirley Medical Centre,"Shirley Medical Centre, 370 Wickham Rd,Shirley, C
 H83044,East Croydon Medical Centre,"East Croydon Medical Ctr., 59 Addiscombe Road, East Croydon, Surrey, CR0 6SD",020 36574170,8399,51.375320327403784,-0.0874543734317567,4
 H83049,Headley Drive Surgery,"117A Headley Drive, New Addington, Croydon, Surrey, CR0 0QL",0844 8151201,6682,51.353267673851,-0.0159457924185837,3
 H83050,The Moorings Medical Practice,"The Moorings Med/Practice, 2A Valley Road, Kenley, Surrey, CR8 5DG",020 34177565,2729,51.32222948512077,-0.0958925186016786,1
-H83051,Thornton & Valley Park Surgery,"Thornton Road Surgery, 299 Thornton Road, Croydon, Surrey, CR0 3EW",020 82519470,4673,51.3880411,-0.12076680000000001,2
+H83051,Thornton & Valley Park Surgery,"Thornton Road Surgery, 299 Thornton Road, Croydon, Surrey, CR0 3EW",020 82519470,4673,51.3880411,-0.1207668,2
 H83052,Bramley Avenue Surgery,"Bramley Avenue Surgery, 1B Bramley Avenue, Coulsdon, Surrey, CR5 2DR",020 86600193,3464,51.32326303999999,-0.141516,1
 H83053,Parchmore Medical Centre,"Parchmore Medical Centre, 97 Parchmore Road, Thornton Heath, Surrey, CR7 8LY",020 82514200,4053,51.402561849651796,-0.1009577528886095,2
 H83608,Brigstock Family Practice,"Brigstock Family Practice, 83 Brigstock Road, Thornton Heath, Surrey, CR7 7JH",020 86897800,11952,51.397290559698675,-0.1035588585227407,5
-H83609,Mersham Medical Centre,"Mersham Medical Centre, 30 Norbury Road, Thornton Heath, Surrey, CR7 8JN",020 86531869,3504,51.40451575,-0.09692039999999999,1
+H83609,Mersham Medical Centre,"Mersham Medical Centre, 30 Norbury Road, Thornton Heath, Surrey, CR7 8JN",020 86531869,3504,51.40451575,-0.0969204,1
 H83611,Selhurst Medical Practice,"Selhurst Medical Practice, 27 Selhurst Road, South Norwood, London, SE25 5QA",020 86842010,15184,51.39001221290021,-0.0889690450427816,5
 H83624,Fairview Medical Centre,"Fairview Medical Centre, 69 Fairview Road, Norbury, London, SW16 5PX",0208 7658525,12195,51.410790554292404,-0.1243543317214083,5
 H83625,Broughton Corner Family Practice,"Broughton Corner Med Ctr, 87 Thornton Road, Thornton Heath, Surrey, CR7 6BH",020 86831277,3413,51.39078673206403,-0.1196099595369835,1
@@ -1058,7 +1058,7 @@ H85023,Bishopsford Road Surgery,"Bishopsford Road Surgery, 191 Bishopsford Road,
 H85024,The Mitcham Medical Centre.,"The Mitcham Medical Ctr., 81 Haslemere Avenue, Mitcham, Surrey, CR4 3PR",020 86483234,11641,51.40732406763998,-0.1817088902228889,5
 H85025,The Wrythe Green Surgery,"The Wrythe Green Surgery, Wrythe Lane, Nr Wrythe Green, Carshalton,Surrey, SM5 2RE",020 86693232,9235,51.37182376666667,-0.1713616666666666,4
 H85026,Francis Grove Surgery,"Francis Grove Surgery, 8 Francis Grove, Wimbledon, London, SW19 4DL",020 89715640,3406,51.4198012475235,-0.2090546665511585,1
-H85027,Wimbledon Village Practice,"35A High Street, Wimbledon, London, SW19 5BY",020 89464820,3583,51.4252505,-0.21889829999999996,1
+H85027,Wimbledon Village Practice,"35A High Street, Wimbledon, London, SW19 5BY",020 89464820,3583,51.4252505,-0.2188983,1
 H85028,Wimbledon Medical Practice,"Patrick Doody Health Cent, 79 Pelham Road, Wimbledon, London, SW19 1NX",020 85422827,5633,51.4175604,-0.1981951,2
 H85029,Wide Way Medical Centre,"Wide Way Medical Centre, Wide Way, Mitcham, Surrey, CR4 1BP",020 86231300,1385,51.40252846414478,-0.1345570781712793,1
 H85030,The Old Court House Surgery,"Old Court House Surgery, 4 Throwley Way, Sutton, Surrey, SM1 4AF",020 86435139,5771,51.363565138884795,-0.1921189037502944,2
@@ -1066,7 +1066,7 @@ H85031,Benhill & Belmont Practice,"54 Benhill Avenue, Sutton, Surrey, SM1 4EB",0
 H85032,Carshalton Fields Surgery,"11 Crichton Road, Carshalton Beeches, Surrey, SM5 3LS",020 86433030,6548,51.35531619085138,-0.1687889218769991,3
 H85033,Tamworth House Medical Centre.,"Tamworth House Med.Ctr., 341 Tamworth Lane, Mitcham, Surrey, CR4 1DL",020 87642666,8982,51.40151280833869,-0.1458179084903737,4
 H85035,Rowans Surgery,"The Rowans Surgery, 1 Windermere Road, London, SW16 5HF",020 87640407,12460,51.4107196,-0.1396345,5
-H85037,Morden Hall Medical Centre,"Morden Hall Medical Ctre, 256 Morden Road, London, SW19 3DA",020 85400585,5151,51.40441679999999,-0.19197089999999997,2
+H85037,Morden Hall Medical Centre,"Morden Hall Medical Ctre, 256 Morden Road, London, SW19 3DA",020 85400585,5151,51.40441679999999,-0.1919709,2
 H85038,Cricket Green Medical Practice,"75-79 Miles Road, Mitcham, Surrey, CR4 3DA",020 86480822,27730,51.4046631662969,-0.1734344496291155,5
 H85041,Earlsfield Surgery,"Earlsfield Surgery, 2-4 Steerforth Street, London, SW18 4HH",020 89465681,15055,51.4386629,-0.1873741,5
 H85045,Bridge Lane Group Practice,"Bridge Lane Group Pract., Bridge Lane Health Centre, 20 Bridge Lane, Battersea, London, SW11 3AD",020 35380882,5940,51.47414112638493,-0.1674183831007397,3
@@ -1081,7 +1081,7 @@ H85057,Elborough Street Surgery,"Elborough Street Surgery, 81 Elborough Street, 
 H85061,The Heathbridge Practice,"Heathbridge Med Practice, 125 Upper Richmond Road, Putney, London, SW15 2TL",020 82464070,7147,51.46007607531697,-0.2151692172980591,3
 H85063,Cheam GP Centre,"Cheam GP Centre, 322 Malden Rd,North Cheam, Sutton, Surrey, SM3 8EP",020 86440224,4242,51.368622217621954,-0.2252642265637946,2
 H85065,The Alton Practice,"The Alton Practice, 208-210 Roehampton Lane, Roehampton, London, SW15 4LE",020 87884844,10031,51.44913997567358,-0.2394714972116319,4
-H85066,Balham Park Surgery,"Balham Park Surgery, 236 Balham High Road, Balham, London, SW17 7AW",020 87728772,8604,51.440380299999994,-0.15568495,4
+H85066,Balham Park Surgery,"Balham Park Surgery, 236 Balham High Road, Balham, London, SW17 7AW",020 87728772,8604,51.4403803,-0.15568495,4
 H85067,Danebury Avenue Surgery,"Danebury Avenue Surgery, 351 Danebury Avenue, Roehampton, London, SW15 4DU",020 33704723,13575,51.45235281314542,-0.2486455625297555,5
 H85069,Lavender Hill Group Practice,"Lavender Hill Group Pract, 19 Pountney Road, Battersea, London, SW11 5TU",020 79244413,4725,51.46604372785,-0.156829806930219,2
 H85070,Central Medical Centre,"Central Medical Centre, 42-46 Central Road, Morden, Surrey, SM4 5RT",020 86489126,9699,51.39822740979182,-0.1889268723874693,4
@@ -1092,7 +1092,7 @@ H85078,Mitcham Family Practice,"55 Mortimer Road, Mitcham, Surrey, CR4 3HS",020 
 H85082,Triangle Surgery,"Triangle Surgery, 2 Broomhill Road, Wandsworth, London, SW18 4HX",020 88741700,9953,51.45670688013134,-0.1983156122438244,4
 H85087,Open Door Surgery,"47 Boundaries Road, Balham, London, SW12 8EU",020 86731476,10473,51.44316538359458,-0.1556069998344082,4
 H85088,Clapham Junction Medical Practice,"7 Farrant House, Winstanley Road, Battersea, London, SW11 2EJ",020 72284172,12427,51.46596924499343,-0.1739077464042434,5
-H85090,Figges Marsh Surgery,"Figges Marsh Surgery, 182 London Road, Mitcham, Surrey, CR4 3LD",020 86404445,7341,51.410463799999995,-0.1619902,3
+H85090,Figges Marsh Surgery,"Figges Marsh Surgery, 182 London Road, Mitcham, Surrey, CR4 3LD",020 86404445,7341,51.4104638,-0.1619902,3
 H85092,Riverhouse Medical Practice,"Riverhouse Surgery, East Road(Off North Road), Wimbledon, London, SW19 1YG",020 85423105,8600,51.42088149124105,-0.1834925319131845,4
 H85095,The Health Centre,"The Health Centre, Robin Hood Lane, Sutton, Surrey, SM1 2RJ",020 30111891,5771,51.36305479999999,-0.1968483,2
 H85100,St Paul'S Cottage Practice,"114 Augustus Road, Wimbledon, London, SW19 6EW",020 30922556,10871,51.44328994969956,-0.2177232027924057,4
@@ -1127,13 +1127,13 @@ Y00020,Dr Wickremesinghe Ssg,"The Grantham Centre, Beckett House,Grantham Rd, St
 Y00057,Angel Surgery,"Silverpoint, 88-90 Fore Street, London, N18 2FF",020 88877555,2835,51.61109707574497,-0.0649515873747737,1
 Y00090,The Doctors House,"The Doctors House, 40 Cameron Rd,Seven Kings, Ilford, Essex, IG3 8LF",020 89838211,8875,51.56538944265582,0.0941905800214407,4
 Y00155,Grove Surgery,"200-202 Chadwell Heath Ln, Chadwell Heath, Romford, Essex, RM6 4YU",020 85487520,6248,51.576471645770475,0.1225403589252293,3
-Y00182,Rainbow Health Centre,"141 Brigstock Road, Thornton Heath, Surrey, CR7 7JN",020 82519280,8379,51.395136444952726,-0.10882621487765301,4
+Y00182,Rainbow Health Centre,"141 Brigstock Road, Thornton Heath, Surrey, CR7 7JN",020 82519280,8379,51.395136444952726,-0.108826214877653,4
 Y00200,Portobello Medical Centre,"Portobello Medical Centre, 14 Codrington Mews, London, W11 2EH",020 77272326,2434,51.51485359523952,-0.2072062898740948,1
 Y00206,Burnley Practice,"First Floor,Willesden Ctr, Robson Avenue, Willesden, London, NW10 3RY",020 84387330,9616,51.54283567950007,-0.2355260950487558,4
 Y00212,Pollard Row Surgery,"Pollard Row Surgery, 47 Pollard Row, London, E2 6NA",020 77297942,5335,51.52787360000001,-0.0645903,2
 Y00312,"The Robins Surgery, Harold Hill Health C","The Robins Surgery, Gooshays Drive, Harold Hill, Romford, Essex, RM3 9SU",01708 796960,6706,51.606266247447024,0.2248947405595108,3
 Y00316,Woodlands Medical Practice,"Woodlands Medical Pract, 54 Leopold Road, East Finchley, London, N2 8BG",020 84422339,2121,51.59291441157436,-0.1709434554045307,1
-Y00352,Hesa Medical Centre - Y00352,"Hesa Primary Care Centre, 52 Station Road, Hayes, Middlesex, UB3 4DD",01895 760560,36464,51.5062366,-0.41924269999999997,5
+Y00352,Hesa Medical Centre - Y00352,"Hesa Primary Care Centre, 52 Station Road, Hayes, Middlesex, UB3 4DD",01895 760560,36464,51.5062366,-0.4192427,5
 Y00403,Trowbridge Practice,"18 Merriam Avenue, Hackney, London, E9 5NE",020 89867781,1443,51.545250019380035,-0.0295995032252213,1
 Y00507,St. Quintin Health Centre,"St.Quintin Health Centre, St.Quintin Avenue, London, W10 6NX",020 89605677,4317,51.51919888048581,-0.2203251717058335,2
 Y00542,Woodlands Practice,"The Woodlands Practice, 11 Red Hill, Chislehurst, Kent, BR7 6DB",020 84687779,6621,51.42107396357554,0.0642134381612936,3
@@ -1156,7 +1156,7 @@ Y02117,St Ann'S Road Surgery,"The Laurels Medical Pract, 256 St Ann'S Road, Tott
 Y02222,The Trinity Medical Centre,"The Trinity Medical Ctr, 2 Garland Road, London, SE18 2AE",020 83197640,7490,51.4788033822055,0.0858147685795534,3
 Y02260,Dr Maher Shakarchi'S Practice,"Belgrave Medical Centre, 13 Pimlico Road, London, SW1W 8NA",020 78248827,10140,51.49076718127693,-0.1508740316823096,4
 Y02342,Featherstone Road Health Centre,"Hartington Road, Southall, Middlesex, UB2 5BQ",020 34057750,17814,51.502574995645894,-0.3852140362462908,5
-Y02423,Grafton Medical Partners,"Trevelyan House, 160 Tooting High Street, London, SW17 0RT",020 34585700,6034,51.424820399999994,-0.1711501,3
+Y02423,Grafton Medical Partners,"Trevelyan House, 160 Tooting High Street, London, SW17 0RT",020 34585700,6034,51.4248204,-0.1711501,3
 Y02575,Omnes Healthcare Ltd,"234 Porters Avenue, Dagenham, Essex, RM8 2EQ",020 85967850,3521,51.545355484425755,0.1226062186909398,1
 Y02589,Hammersmith & Fulham Centres For Health,"Hammersmith Hospital, Du Cane Road, Hammersmith, London, W12 0HS",020 88930384,19479,51.51641635360055,-0.2373821078549553,5
 Y02671,The Practice Heart Of Hounslow,"Heart Of Hounslow, 92 Bath Road, Hounslow, Middlesex, TW3 3LN",020 81040810,7268,51.468133745540676,-0.3717604902010349,3
@@ -1168,21 +1168,21 @@ Y02842,Half Penny Steps Health Centre,"427-429 Harrow Road, London, W10 4RE",020
 Y02906,Canberra Old Oak Surgery,"Parkview Cfh, Cranston Ct, 56 Bloemfontein Road, White City, London, W12 7FG",020 33139010,1427,51.51084517882258,-0.2352203713869086,1
 Y02914,Angel Medical Practice,"Angel Medical Practice, 34 Ritchie Street, London, N1 0DG",020 78371663,8990,51.53471709132776,-0.1078254567337148,4
 Y02928,The Practice Albert Road,"76 Albert Road, North Woolwich, London, E16 2DY",020 81042222,11225,51.50151771542279,0.0527927241995372,4
-Y02946,The Junction Hth Ctr-Registered Patients,"Arches 5-7,Clapham J Stn, Grant Road, Clapham Junction, London, SW11 2NU",0333 2001718,10273,51.465460799999995,-0.1711572499999999,4
+Y02946,The Junction Hth Ctr-Registered Patients,"Arches 5-7,Clapham J Stn, Grant Road, Clapham Junction, London, SW11 2NU",0333 2001718,10273,51.4654608,-0.1711572499999999,4
 Y02962,The Practice Surgeries Ltd,"Edridge Rd Comm Centre, Impact Hse, 2 Edridge Rd, Croydon, Surrey, CR0 1FE",020 30400800,10748,51.37047622899697,-0.0985015527131469,4
 Y02973,Kings Park Surgery,"St Clements Avenue, Off Gubbins Lane, Harold Wood, Essex, RM3 0FE",01708 574000,11449,51.59318437751934,0.2256991423170697,5
-Y02974,At Medics,"4-5 Thames Reach, Thamesmead, London, SE28 0NY",020 83195880,10807,51.498872,0.09017939999999999,4
+Y02974,At Medics,"4-5 Thames Reach, Thamesmead, London, SE28 0NY",020 83195880,10807,51.498872,0.0901794,4
 Y02986,Cricklewood Health Centre,"Britannia Business Centre, 2 Cricklewood Lane, Barnet, London, NW2 1DZ",0300 0334335,12852,51.557497275,-0.2153010049624465,5
 Y02987,At Medics - The Loxford Practice,"Loxford Polyclinic, 417 Ilford Lane, Ilford, Essex, IG1 2SN",020 38877900,14104,51.54651268033001,0.0769029662077294,5
 Y03023,St Andrews Health Centre,"2 Hannaford Walk, Bow, London, E3 3FF",020 89801888,6373,51.5238708,-0.014907,3
 Y03035,Queenswood Medical Practice,"151 Park Road, Crouch End, London, N8 8JD",020 31433500,13485,51.58341922385008,-0.1310388542242853,5
 Y03049,Spring Hill Practice,"Spring Hill Practice, 57 Stamford Hill, London, N16 5SR",020 88158509,9254,51.566342691724365,-0.0734878264281069,4
 Y03063,Hetherington At The Pavilion,"Hetherington At Pavilion, 9 Brighton Terrace, London, SW9 8DJ",020 72749252,13391,51.461681070658884,-0.1163509692487779,5
-Y03094,The Junction Hc - Unregistered Patients,"Arches 5-7,Clapham J Stn, Grant Road, Clapham Junction, London, SW11 2NU",0333 2001718,8773,51.465460799999995,-0.1711572499999999,4
+Y03094,The Junction Hc - Unregistered Patients,"Arches 5-7,Clapham J Stn, Grant Road, Clapham Junction, London, SW11 2NU",0333 2001718,8773,51.4654608,-0.1711572499999999,4
 Y03103,Medicus Select Care,"Gnd Flr, Margarete Ctre, 108 Hampstead Rd, London, NW1 2LS",020 38130611,23210,51.528275124855604,-0.1382429246488646,5
 Y03135,Bridge House Medical Practice,"96 Umfreville Road,  London, N4 1TL",020 84829697,24443,51.57731346725914,-0.0991340619277486,5
 Y03296,Clover Health Centre,"Equitable House, General Gordon Place, Woolwich, London, SE18 6AB",020 83310567,10884,51.49035896435294,0.0685661269578477,4
-Y03402,Evergreen Primary Care Centre,"Evergreen Pcc, 1 Smythe Close, Edmonton, London, N9 0TW",020 88878354,7260,51.6237762,-0.060311199999999995,3
+Y03402,Evergreen Primary Care Centre,"Evergreen Pcc, 1 Smythe Close, Edmonton, London, N9 0TW",020 88878354,7260,51.6237762,-0.0603112,3
 Y03433,Gynaecology Services,"Stratford Village Surgery, 50C Romford Road, Stratford, London, E15 4BZ",020 85344133,13621,51.54208678815753,0.0061922794196936,5
 Y03434,Patient First Social Enterprise,"Stratford Village Surgery, 50C Romford Road, Stratford, London, E15 4BZ",020 85344133,12070,51.54208678815753,0.0061922794196936,5
 Y03441,"Health And Wellbeing Centre, Earls Court","2B Hogarth Road, Earls Court, London, SW5 0PT",020 73410300,8285,51.492821815221994,-0.1925416483312598,3
@@ -1206,6 +1206,6 @@ Y05502,A&E Hub,"75-79 York Road,  London, SE1 7NJ",020 30496717,26216,51.5028573
 Y05857,Rhnd,"Rhnd, West Hill, Putney, London, SW15 3SW",020 87804500,10940,51.45181498216177,-0.213733754130927,4
 Y06113,Qhs GP Care Home Service,"Spa Medical Centre, 50 Old Jamaica Road, London, SE16 4BL",020 30497249,26411,51.49700605489632,-0.0691536742573191,5
 Y06345,Bromleag Care Practice,"Kelsey Park Farm House, 379 Croydon Road, Beckenham, Kent, BR3 3QL",020 39300270,15724,51.40515546595299,-0.0331278931863235,5
-Y06545,Sel Special Allocation Practice,"Novum Health Partnership, Rushey Green Group Pract., Hawstead Road, Catford, SE6 4JH",020 36402113,11337,51.4495854,-0.018182499999999997,4
-Y06592,Special Allocation Scheme (Nel),"The Primary Care Centre, Hawstead Road, Catford, London, SE6 4JH",0330 1281661,7108,51.4495854,-0.018182499999999997,3
+Y06545,Sel Special Allocation Practice,"Novum Health Partnership, Rushey Green Group Pract., Hawstead Road, Catford, SE6 4JH",020 36402113,11337,51.4495854,-0.0181825,4
+Y06592,Special Allocation Scheme (Nel),"The Primary Care Centre, Hawstead Road, Catford, London, SE6 4JH",0330 1281661,7108,51.4495854,-0.0181825,3
 Y07020,Lambeth Healthcare Practice,"1 Alleyn Park, Lambeth, London, SE21 8AU",020 86559180,9245,51.430297603900975,-0.0860944940271639,4
