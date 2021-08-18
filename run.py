@@ -214,6 +214,7 @@ gp_prac_pop_df_1['GP Patient Number Quintile']):
         ).add_to(fig_2)
 ##Visualization Plot 2 end 
 
+
 ##CSS styling Plot 2 legend
 template = """
 {% macro html(this, kwargs) %}
