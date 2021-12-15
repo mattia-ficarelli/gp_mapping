@@ -7828,9 +7828,6 @@ b {
   padding: 8px 32px;
   position: relative;
   top: -16px;
-  padding-top: 0 !important;
-  text-align: justify;
-  text-justify: inter-word;
   /* [2] */
 }
 @media (min-width: 40.0625em) {
@@ -7868,7 +7865,6 @@ b {
   padding: 24px;
   background-color: #ffeb3b;
   color: #212b32;
-  padding-top: 0 !important;
   text-align: justify;
   vertical-align: middle;
   text-justify: inter-word;
@@ -7882,12 +7878,12 @@ b {
 }
 @media (min-width: 40.0625em) {
   .nhsuk-warning-disclaimer {
-    margin-bottom: 48px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 40.0625em) {
   .nhsuk-warning-disclaimer {
-    margin-top: 48px;
+    margin-top: 0px;
   }
 }
 @media (min-width: 40.0625em) {
